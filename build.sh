@@ -52,11 +52,11 @@ cat >> sales-pitch.html << 'FOOTER'
       backgroundTransition: 'fade',
       transitionSpeed: 'default',
       fragments: true,
-      width: '100%',
-      height: '100%',
-      margin: 0.04,
-      minScale: 1,
-      maxScale: 1,
+      width: 1100,
+      height: 700,
+      margin: 0.08,
+      minScale: 0.2,
+      maxScale: 1.5,
       plugins: [RevealNotes]
     });
   </script>
