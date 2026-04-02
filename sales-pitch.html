@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainQA — Sales Pitch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <style>
+:root {
+  --v950: #1e1b4b;
+  --v600: #7c3aed;
+  --v500: #8b5cf6;
+  --v400: #a78bfa;
+  --v300: #c4b5fd;
+  --v200: #ddd6fe;
+  --indigo300: #a5b4fc;
+  --emerald: #10b981;
+  --bg: #0b0b14;
+  --card: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.10);
+  --text: #ffffff;
+  --dim: rgba(255,255,255,0.75);
+  --dim2: rgba(255,255,255,0.55);
+}
+
+/* ========== BASE ========== */
+.reveal {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.reveal .slides section {
+  text-align: left;
+  padding: 44px 52px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  text-transform: none;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #fff;
+  line-height: 1.15;
+}
+
+.reveal h1 { font-size: 2.6em; }
+.reveal h2 { font-size: 1.85em; }
+.reveal h3 { font-size: 1.05em; color: var(--v400); font-weight: 600; }
+
+.cx { text-align: center !important; }
+
+/* ========== COLORS ========== */
+.v5 { color: var(--v500); }
+.v4 { color: var(--v400); }
+.v3 { color: var(--v300); }
+.em { color: var(--emerald); }
+
+.gr {
+  background: linear-gradient(135deg, var(--v500), var(--v300));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== COMPONENTS ========== */
+.tag {
+  display: inline-block;
+  font-size: 0.42em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--v400);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  padding: 4px 14px;
+  margin-bottom: 16px;
+}
+
+.sub {
+  font-size: 0.72em;
+  color: rgba(255,255,255,0.80);
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 700px;
+}
+.cx .sub { margin: 0 auto; }
+
+.brand-sm {
+  font-size: 0.42em;
+  color: var(--dim2);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+/* ========== ENTRANCE ANIMATIONS ========== */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(40px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes rise-blur {
+  from { opacity: 0; transform: translateY(30px); filter: blur(8px); }
+  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(60px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glow-breathe {
+  0%, 100% { box-shadow: 0 0 20px rgba(139,92,246,0.15); }
+  50% { box-shadow: 0 0 40px rgba(139,92,246,0.35); }
+}
+
+@keyframes text-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Apply on slide enter */
+.reveal .slides section.present .tag {
+  animation: rise-blur 0.6s ease both;
+}
+
+.reveal .slides section.present h1,
+.reveal .slides section.present h2 {
+  animation: rise-blur 0.7s ease 0.1s both;
+}
+
+.reveal .slides section.present .sub {
+  animation: rise 0.6s ease 0.25s both;
+}
+
+.reveal .slides section.present .card {
+  animation: rise 0.5s ease both;
+}
+.reveal .slides section.present .card:nth-child(2) { animation-delay: 0.15s; }
+.reveal .slides section.present .card:nth-child(3) { animation-delay: 0.25s; }
+.reveal .slides section.present .card:nth-child(4) { animation-delay: 0.35s; }
+
+.reveal .slides section.present .metric,
+.reveal .slides section.present .uc-card,
+.reveal .slides section.present .sec-card,
+.reveal .slides section.present .price-card,
+.reveal .slides section.present .diff-card,
+.reveal .slides section.present .ind-tag {
+  animation: scale-in 0.5s ease both;
+}
+
+.reveal .slides section.present .metric:nth-child(1) { animation-delay: 0.1s; }
+.reveal .slides section.present .metric:nth-child(2) { animation-delay: 0.2s; }
+.reveal .slides section.present .metric:nth-child(3) { animation-delay: 0.3s; }
+.reveal .slides section.present .metric:nth-child(4) { animation-delay: 0.4s; }
+
+.reveal .slides section.present .g3 > *:nth-child(1) { animation-delay: 0.1s; }
+.reveal .slides section.present .g3 > *:nth-child(2) { animation-delay: 0.2s; }
+.reveal .slides section.present .g3 > *:nth-child(3) { animation-delay: 0.3s; }
+
+/* ========== CARDS ========== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 20px 24px;
+  margin: 8px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateX(6px);
+  box-shadow: -4px 0 20px rgba(139,92,246,0.1);
+}
+
+.card-accent { border-left: 3px solid var(--v500); }
+
+.card-title { font-size: 0.68em; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.card-desc { font-size: 0.55em; color: rgba(255,255,255,0.75); line-height: 1.5; }
+
+/* ========== GRIDS ========== */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 20px; }
+.g4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; margin-top: 20px; }
+
+/* ========== METRICS ========== */
+.metric {
+  background: var(--v950);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  padding: 20px 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(139,92,246,0.2);
+}
+
+.metric .num {
+  font-size: 2.2em;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.metric .lbl { font-size: 0.46em; color: var(--dim); margin-top: 5px; font-weight: 500; }
+
+/* ========== 3D WORKFLOW — THE SHOWSTOPPER ========== */
+.wf-universe {
+  perspective: 900px;
+  margin-top: 14px;
+  position: relative;
+}
+
+/* Ambient glow behind the board */
+.wf-universe::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wf-board {
+  transform: rotateX(12deg) rotateY(-3deg) translateZ(0);
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 1;
+}
+
+.reveal .slides section.present .wf-board {
+  animation: board-enter 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+@keyframes board-enter {
+  from {
+    opacity: 0;
+    transform: rotateX(30deg) rotateY(-10deg) translateZ(-100px) scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(12deg) rotateY(-3deg) translateZ(0) scale(1);
+  }
+}
+
+.wf-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 2px;
+}
+
+.wf-node {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 11px 12px;
+  flex: 1;
+  min-width: 0;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.wf-node:hover {
+  transform: translateZ(30px) scale(1.03);
+  box-shadow:
+    0 20px 50px rgba(139, 92, 246, 0.25),
+    0 0 0 1px rgba(139, 92, 246, 0.3);
+  z-index: 10;
+  border-color: var(--v400);
+}
+
+/* Staggered entrance for nodes */
+.reveal .slides section.present .wf-row:first-child .wf-node:nth-child(1) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 0.3s both; }
+.reveal .slides section.present .wf-row:first-child .wf-node:nth-child(3) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 0.45s both; }
+.reveal .slides section.present .wf-row:first-child .wf-node:nth-child(5) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 0.6s both; }
+.reveal .slides section.present .wf-row:first-child .wf-node:nth-child(7) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 0.75s both; }
+
+.reveal .slides section.present .wf-row:last-child .wf-node:nth-child(7) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 0.95s both; }
+.reveal .slides section.present .wf-row:last-child .wf-node:nth-child(5) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 1.1s both; }
+.reveal .slides section.present .wf-row:last-child .wf-node:nth-child(3) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 1.25s both; }
+.reveal .slides section.present .wf-row:last-child .wf-node:nth-child(1) { animation: node-fly 0.6s cubic-bezier(0.16,1,0.3,1) 1.4s both; }
+
+@keyframes node-fly {
+  from {
+    opacity: 0;
+    transform: translateZ(-80px) translateY(20px) scale(0.8);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0) translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Arrows animate in */
+.reveal .slides section.present .wf-arrow {
+  animation: arrow-fade 0.3s ease both;
+}
+.reveal .slides section.present .wf-row:first-child .wf-arrow:nth-child(2) { animation-delay: 0.4s; }
+.reveal .slides section.present .wf-row:first-child .wf-arrow:nth-child(4) { animation-delay: 0.55s; }
+.reveal .slides section.present .wf-row:first-child .wf-arrow:nth-child(6) { animation-delay: 0.7s; }
+
+@keyframes arrow-fade {
+  from { opacity: 0; transform: scaleX(0); }
+  to   { opacity: 0.6; transform: scaleX(1); }
+}
+
+/* Active node — processing glow */
+.wf-node.active {
+  border-color: var(--v500);
+  background: rgba(139, 92, 246, 0.06);
+  animation: active-glow 2.5s ease-in-out infinite !important;
+  transform: translateZ(15px);
+}
+
+@keyframes active-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 15px rgba(139,92,246,0.2),
+      0 0 40px rgba(139,92,246,0.05),
+      inset 0 0 20px rgba(139,92,246,0.03);
+  }
+  50% {
+    box-shadow:
+      0 0 25px rgba(139,92,246,0.4),
+      0 0 60px rgba(139,92,246,0.12),
+      inset 0 0 30px rgba(139,92,246,0.06);
+  }
+}
+
+/* Scanning line inside active node */
+.wf-node.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--v400), transparent);
+  animation: scan-line 2s ease-in-out infinite;
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(70px); opacity: 0; }
+}
+
+/* Done nodes — subtle completed shimmer */
+.wf-node.done {
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.wf-node.done::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(16, 185, 129, 0.04) 45%,
+    rgba(16, 185, 129, 0.08) 50%,
+    rgba(16, 185, 129, 0.04) 55%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.wf-node .wf-id {
+  font-size: 0.36em;
+  color: var(--v400);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.wf-node .wf-name { font-size: 0.56em; font-weight: 700; color: #fff; margin-top: 1px; }
+.wf-node .wf-detail { font-size: 0.38em; color: var(--dim2); margin-top: 2px; line-height: 1.3; }
+
+.wf-status {
+  display: inline-block;
+  font-size: 0.32em;
+  font-weight: 700;
+  padding: 2px 7px;
+  margin-top: 4px;
+  letter-spacing: 0.06em;
+}
+
+.wf-status.done { background: rgba(16,185,129,0.12); color: var(--emerald); }
+.wf-status.run  { background: rgba(139,92,246,0.15); color: var(--v400); }
+.wf-status.wait { background: rgba(255,255,255,0.04); color: var(--dim2); }
+
+.wf-arrow {
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--v400);
+  font-size: 0.65em;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.wf-down {
+  display: flex;
+  padding: 2px 0;
+  color: var(--v400);
+  font-size: 0.6em;
+  opacity: 0.6;
+}
+
+/* ========== TABLE ========== */
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  font-size: 0.63em;
+}
+
+.tbl th {
+  background: var(--v950);
+  border-bottom: 2px solid var(--v500);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--v400);
+}
+
+.tbl td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.tbl .good { color: var(--emerald); font-weight: 700; }
+.tbl .old  { color: var(--dim2); }
+
+/* Rows slide in */
+.reveal .slides section.present .tbl tbody tr {
+  animation: slide-left 0.4s ease both;
+}
+.reveal .slides section.present .tbl tbody tr:nth-child(1) { animation-delay: 0.2s; }
+.reveal .slides section.present .tbl tbody tr:nth-child(2) { animation-delay: 0.3s; }
+.reveal .slides section.present .tbl tbody tr:nth-child(3) { animation-delay: 0.4s; }
+.reveal .slides section.present .tbl tbody tr:nth-child(4) { animation-delay: 0.5s; }
+.reveal .slides section.present .tbl tbody tr:nth-child(5) { animation-delay: 0.6s; }
+
+/* ========== PRICING ========== */
+.price-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 24px 18px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(139,92,246,0.15);
+}
+
+.price-card.pop {
+  border-color: var(--v500);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.12);
+}
+
+.pop-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--v500), var(--v300));
+  color: #fff;
+  font-size: 0.36em;
+  font-weight: 800;
+  padding: 3px 12px;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.price-card .p-name { font-size: 0.88em; font-weight: 800; color: #fff; }
+.price-card .p-price { font-size: 0.58em; color: var(--dim); margin: 5px 0 12px; }
+.price-card .p-list { text-align: left; font-size: 0.46em; color: var(--dim); line-height: 2; }
+.price-card .p-list .ck { color: var(--v400); margin-right: 6px; }
+
+/* ========== ICON BOXES ========== */
+.ico-box {
+  width: 30px;
+  height: 30px;
+  background: rgba(139, 92, 246, 0.10);
+  border: 1px solid rgba(139, 92, 246, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.ico-box svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--v400);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ========== COMPARE ========== */
+.compare {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 26px 0;
+  align-items: center;
+}
+
+.cmp-box {
+  text-align: center;
+  padding: 18px 26px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  transition: transform 0.3s ease;
+}
+
+.cmp-box:hover { transform: scale(1.05); }
+
+.cmp-lbl { font-size: 0.5em; color: var(--dim); margin-bottom: 6px; }
+.cmp-val { font-size: 1.5em; font-weight: 900; color: var(--dim); }
+.cmp-arr { font-size: 1.3em; color: var(--v400); opacity: 0.5; }
+
+/* ========== USE CASE ========== */
+.uc-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--v500);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(139,92,246,0.12);
+}
+
+.uc-title { font-size: 0.74em; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.uc-desc { font-size: 0.46em; color: var(--dim); line-height: 1.5; margin-bottom: 10px; }
+.uc-num { font-size: 1.3em; font-weight: 900; color: #fff; }
+.uc-num-lbl { font-size: 0.38em; color: var(--dim2); }
+
+/* ========== CTA ========== */
+.cta-block {
+  background: var(--v950);
+  border: 2px solid var(--v500);
+  padding: 34px;
+  text-align: center;
+  margin-top: 26px;
+  animation: glow-breathe 3s ease-in-out infinite;
+}
+
+.cta-main { font-size: 0.92em; font-weight: 700; color: #fff; }
+
+.cta-big {
+  font-size: 1.3em;
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--v400), var(--v300), var(--v400));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-shimmer 4s linear infinite;
+  margin-top: 6px;
+}
+
+.cta-sub { font-size: 0.56em; color: var(--dim); margin-top: 10px; }
+.cta-contact { font-size: 0.58em; color: var(--dim2); margin-top: 14px; }
+
+/* ========== INDUSTRY ========== */
+.ind-tag {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 14px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.ind-tag:hover {
+  transform: translateY(-4px);
+  border-color: var(--v400);
+}
+
+.ind-tag svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--v400);
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ind-name { font-size: 0.56em; font-weight: 600; color: #fff; margin-top: 5px; }
+
+/* ========== DIFF ========== */
+.diff-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diff-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(139,92,246,0.15);
+}
+
+.diff-ico {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 10px;
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diff-ico svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--v400);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.diff-title { font-size: 0.68em; font-weight: 700; color: #fff; margin-bottom: 5px; }
+.diff-desc { font-size: 0.46em; color: var(--dim); line-height: 1.5; }
+
+/* ========== SECURITY ========== */
+.sec-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 14px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sec-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139,92,246,0.3);
+}
+
+.sec-title { font-size: 0.6em; font-weight: 700; color: #fff; margin-bottom: 3px; }
+.sec-desc { font-size: 0.44em; color: var(--dim); line-height: 1.4; }
+
+/* ========== DEMO ========== */
+.demo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.demo-play {
+  width: 88px;
+  height: 88px;
+  border: 2px solid var(--v500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: var(--v400);
+  margin-bottom: 20px;
+  position: relative;
+  animation: glow-breathe 3s ease-in-out infinite;
+}
+
+/* Orbiting ring around play button */
+.demo-play::after {
+  content: '';
+  position: absolute;
+  top: -12px; left: -12px; right: -12px; bottom: -12px;
+  border: 1px solid rgba(139,92,246,0.15);
+  border-top-color: var(--v400);
+  animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ========== COVER SPECIAL ========== */
+.reveal .slides section.present .brand-name {
+  animation: rise-blur 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+/* Floating particles background for cover */
+.particles {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--v400);
+  border-radius: 50%;
+  opacity: 0;
+  animation: float-up 6s ease-in-out infinite;
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 5s; }
+.particle:nth-child(2) { left: 25%; animation-delay: 1s; animation-duration: 7s; }
+.particle:nth-child(3) { left: 40%; animation-delay: 2s; animation-duration: 4s; }
+.particle:nth-child(4) { left: 55%; animation-delay: 0.5s; animation-duration: 6s; }
+.particle:nth-child(5) { left: 70%; animation-delay: 1.5s; animation-duration: 5.5s; }
+.particle:nth-child(6) { left: 85%; animation-delay: 3s; animation-duration: 7s; }
+.particle:nth-child(7) { left: 15%; animation-delay: 2.5s; animation-duration: 4.5s; }
+.particle:nth-child(8) { left: 60%; animation-delay: 3.5s; animation-duration: 6.5s; }
+.particle:nth-child(9) { left: 35%; animation-delay: 4s; animation-duration: 5s; }
+.particle:nth-child(10) { left: 80%; animation-delay: 0.8s; animation-duration: 7.5s; }
+
+@keyframes float-up {
+  0% { bottom: -5%; opacity: 0; transform: scale(1); }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { bottom: 105%; opacity: 0; transform: scale(0.3); }
+}
+
+/* ========== BRAIN LOGO ANIMATIONS ========== */
+
+/* Draw brain outline */
+.brain-draw {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw-path 2s ease forwards;
+}
+
+@keyframes draw-path {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Neurons fire in sequence */
+.neuron {
+  fill: rgba(139, 92, 246, 0);
+  animation: neuron-fire 3s ease-in-out infinite;
+}
+
+.n1  { animation-delay: 0s; }
+.n2  { animation-delay: 0.3s; }
+.n3  { animation-delay: 0.6s; }
+.n4  { animation-delay: 0.9s; }
+.n5  { animation-delay: 1.2s; }
+.n6  { animation-delay: 1.5s; }
+.n7  { animation-delay: 1.8s; }
+.n8  { animation-delay: 2.1s; }
+.n9  { animation-delay: 2.4s; }
+.n10 { animation-delay: 2.7s; }
+
+@keyframes neuron-fire {
+  0%, 100% { fill: rgba(139, 92, 246, 0.1); r: 2; }
+  30% { fill: rgba(167, 139, 250, 0.9); r: 4; }
+  60% { fill: rgba(139, 92, 246, 0.3); r: 2.5; }
+}
+
+/* Synapses pulse with signal */
+.synapse {
+  stroke-width: 0.8;
+  stroke: rgba(139, 92, 246, 0.2);
+  animation: synapse-pulse 3s ease-in-out infinite;
+}
+
+.s1  { animation-delay: 0.15s; }
+.s2  { animation-delay: 0.45s; }
+.s3  { animation-delay: 0.6s; }
+.s4  { animation-delay: 0.75s; }
+.s5  { animation-delay: 1.05s; }
+.s6  { animation-delay: 1.2s; }
+.s7  { animation-delay: 1.35s; }
+.s8  { animation-delay: 1.65s; }
+.s9  { animation-delay: 1.95s; }
+.s10 { animation-delay: 2.25s; }
+.s11 { animation-delay: 1.8s; }
+.s12 { animation-delay: 1.5s; }
+
+@keyframes synapse-pulse {
+  0%, 100% { stroke: rgba(139, 92, 246, 0.15); stroke-width: 0.8; }
+  30% { stroke: rgba(167, 139, 250, 0.8); stroke-width: 1.5; }
+  60% { stroke: rgba(139, 92, 246, 0.3); stroke-width: 1; }
+}
+
+/* Pulse rings expand outward */
+.pulse-ring {
+  animation: ring-expand 4s ease-out infinite;
+  transform-origin: center;
+}
+.pulse-ring.r2 { animation-delay: 2s; }
+
+@keyframes ring-expand {
+  0% { r: 50; opacity: 0.4; }
+  100% { r: 80; opacity: 0; }
+}
+
+/* ========== GLOBAL NEURAL BG ON ALL SLIDES ========== */
+.reveal .slides section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(1px 1px at 10% 20%, rgba(139,92,246,0.3), transparent),
+    radial-gradient(1px 1px at 30% 70%, rgba(167,139,250,0.2), transparent),
+    radial-gradient(1px 1px at 50% 40%, rgba(139,92,246,0.15), transparent),
+    radial-gradient(1px 1px at 70% 80%, rgba(167,139,250,0.2), transparent),
+    radial-gradient(1px 1px at 90% 30%, rgba(139,92,246,0.25), transparent),
+    radial-gradient(1px 1px at 20% 90%, rgba(167,139,250,0.15), transparent),
+    radial-gradient(1px 1px at 80% 10%, rgba(139,92,246,0.2), transparent),
+    radial-gradient(1px 1px at 40% 50%, rgba(167,139,250,0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+  animation: stars-drift 20s linear infinite;
+}
+
+@keyframes stars-drift {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-3px) translateX(2px); }
+  100% { transform: translateY(0) translateX(0); }
+}
+
+.reveal .slides section > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ========== OVERRIDES ========== */
+.reveal .slide-number { display: none !important; }
+.reveal .progress span { background: var(--v500); }
+.reveal .controls { color: var(--v400) !important; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 01-cover.html -->
+<section class="cx" style="position:relative;">
+  <div style="position:relative; z-index:1;">
+    <div class="tag">Intelligence Qualite pour Centres d'Appels</div>
+    <!-- BRAIN LOGO -->
+    <div style="margin: 0 auto 16px; width:100px; height:100px;">
+      <svg viewBox="0 0 120 120" width="100" height="100">
+        <!-- Brain shape -->
+        <g stroke="#a78bfa" fill="none" stroke-width="1.5" opacity="0.9">
+          <!-- Left hemisphere -->
+          <path d="M60 20 C40 20, 25 30, 25 50 C25 55, 28 60, 22 65 C18 68, 20 78, 28 80 C24 85, 28 95, 38 95 C42 100, 55 100, 60 95" class="brain-draw"/>
+          <!-- Right hemisphere -->
+          <path d="M60 20 C80 20, 95 30, 95 50 C95 55, 92 60, 98 65 C102 68, 100 78, 92 80 C96 85, 92 95, 82 95 C78 100, 65 100, 60 95" class="brain-draw"/>
+          <!-- Neural connections inside -->
+          <circle cx="42" cy="45" r="3" class="neuron n1"/>
+          <circle cx="55" cy="35" r="2.5" class="neuron n2"/>
+          <circle cx="70" cy="42" r="3" class="neuron n3"/>
+          <circle cx="48" cy="60" r="2.5" class="neuron n4"/>
+          <circle cx="65" cy="55" r="2" class="neuron n5"/>
+          <circle cx="78" cy="58" r="2.5" class="neuron n6"/>
+          <circle cx="38" cy="75" r="2" class="neuron n7"/>
+          <circle cx="55" cy="72" r="3" class="neuron n8"/>
+          <circle cx="72" cy="70" r="2.5" class="neuron n9"/>
+          <circle cx="60" cy="88" r="2" class="neuron n10"/>
+          <!-- Synapses -->
+          <line x1="42" y1="45" x2="55" y2="35" class="synapse s1"/>
+          <line x1="55" y1="35" x2="70" y2="42" class="synapse s2"/>
+          <line x1="42" y1="45" x2="48" y2="60" class="synapse s3"/>
+          <line x1="70" y1="42" x2="65" y2="55" class="synapse s4"/>
+          <line x1="65" y1="55" x2="78" y2="58" class="synapse s5"/>
+          <line x1="48" y1="60" x2="55" y2="72" class="synapse s6"/>
+          <line x1="65" y1="55" x2="55" y2="72" class="synapse s7"/>
+          <line x1="55" y1="72" x2="72" y2="70" class="synapse s8"/>
+          <line x1="38" y1="75" x2="55" y2="72" class="synapse s9"/>
+          <line x1="55" y1="72" x2="60" y2="88" class="synapse s10"/>
+          <line x1="72" y1="70" x2="78" y2="58" class="synapse s11"/>
+          <line x1="48" y1="60" x2="38" y2="75" class="synapse s12"/>
+        </g>
+        <!-- QA pulse ring -->
+        <circle cx="60" cy="60" r="55" stroke="#7c3aed" stroke-width="0.5" fill="none" opacity="0.3" class="pulse-ring"/>
+        <circle cx="60" cy="60" r="55" stroke="#7c3aed" stroke-width="0.5" fill="none" opacity="0.15" class="pulse-ring r2"/>
+      </svg>
+    </div>
+    <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">BrainQA</span></h1>
+    <p class="sub">Chaque appel evalue. Chaque insight livre.</p>
+    <div class="brand-sm">par Nourai Solutions</div>
+  </div>
+  <aside class="notes">
+    "Bonjour. Je suis [Nom], Nourai Solutions."
+  </aside>
+</section>
+
+      <!-- 02-pain.html -->
+<section>
+  <h2>Vous evaluez <span class="v4">2-3%</span> de vos appels.</h2>
+  <p class="sub">Que se passe-t-il dans les 97% restants ?</p>
+  <div class="card card-accent" style="margin-top:22px;">
+    <div class="card-title">Echantillonnage aleatoire</div>
+    <div class="card-desc">Vos auditeurs ecoutent au hasard. Les appels critiques passent entre les mailles du filet.</div>
+  </div>
+  <div class="card card-accent">
+    <div class="card-title">Evaluations inconsistantes</div>
+    <div class="card-desc">Deux auditeurs, deux scores differents. Pas de calibrage fiable a grande echelle.</div>
+  </div>
+  <div class="card card-accent">
+    <div class="card-title">Conformite a risque</div>
+    <div class="card-desc">Un seul appel non conforme non detecte = des milliers d'euros en penalites potentielles.</div>
+  </div>
+  <aside class="notes">
+    Posez la question directement. Silence.
+    "Combien d'appels ecoutez-vous par mois ? 50 ? 100 ?"
+  </aside>
+</section>
+
+      <!-- 03-cost.html -->
+<section class="cx">
+  <h2>Le cout de l'<span class="v4">invisible</span></h2>
+  <div class="compare">
+    <div class="cmp-box">
+      <div class="cmp-lbl">Cout auditeur / appel</div>
+      <div class="cmp-val">5-8 &euro;</div>
+    </div>
+    <div class="cmp-arr">&rarr;</div>
+    <div class="cmp-box">
+      <div class="cmp-lbl">Temps d'ecoute / appel</div>
+      <div class="cmp-val">15-20 min</div>
+    </div>
+    <div class="cmp-arr">&rarr;</div>
+    <div class="cmp-box">
+      <div class="cmp-lbl">Couverture reelle</div>
+      <div class="cmp-val">2-3%</div>
+    </div>
+  </div>
+  <p class="sub" style="text-align:center; margin:0 auto;">
+    Un agent non conforme non detecte pendant 1 mois =
+    des dizaines d'appels a risque. Des clients perdus. Des sanctions.
+  </p>
+  <aside class="notes">
+    "Combien vous coute un auditeur a temps plein ?
+    Combien d'appels par jour ? 15 ? 20 ? Une goutte d'eau."
+  </aside>
+</section>
+
+      <!-- 04-question.html -->
+<section class="cx">
+  <h2 style="font-size: 2.2em; line-height: 1.3;">
+    Et si <span class="gr">chaque appel</span> etait evalue<br>
+    avec la precision de votre<br>
+    <span class="gr">meilleur auditeur</span> ?
+  </h2>
+  <p class="sub" style="margin: 24px auto 0;">
+    Sans recrutement. Sans ecoute manuelle. En moins de 2 minutes.
+  </p>
+  <aside class="notes">
+    Pause. Silence. "C'est exactement ce que nous avons construit."
+  </aside>
+</section>
+
+      <!-- 05-product.html -->
+<section class="cx">
+  <div class="tag">La Solution</div>
+  <h1 style="font-size:2.4em;"><span class="gr">BrainQA</span></h1>
+  <p class="sub" style="margin:8px auto 0;">
+    Monitoring qualite 100% IA. Chaque conversation analysee
+    avec la precision de vos meilleurs auditeurs.
+  </p>
+  <div class="g4" style="max-width:760px; margin:26px auto 0;">
+    <div class="metric">
+      <div class="num">98.2%</div>
+      <div class="lbl">Precision</div>
+    </div>
+    <div class="metric">
+      <div class="num">40x</div>
+      <div class="lbl">Plus rapide</div>
+    </div>
+    <div class="metric">
+      <div class="num">100%</div>
+      <div class="lbl">Couverture</div>
+    </div>
+    <div class="metric">
+      <div class="num">&lt;2min</div>
+      <div class="lbl">Par appel</div>
+    </div>
+  </div>
+  <aside class="notes">
+    "Resultats mesures en production."
+    "Pas 5%, pas 10%. CHAQUE appel."
+  </aside>
+</section>
+
+      <!-- 06-workflow.html -->
+<section style="position:relative; overflow:hidden;">
+  <canvas id="wf-particles" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; pointer-events:none;"></canvas>
+  <div style="position:relative; z-index:1;">
+    <div class="tag">Architecture du Pipeline</div>
+    <h2 style="font-size:1.55em;">10 etapes. &lt;2 minutes. <span class="v4">Zero intervention.</span></h2>
+    <div class="wf-universe">
+      <div class="wf-board">
+        <div class="wf-row">
+          <div class="wf-node done">
+            <div class="wf-id">01</div>
+            <div class="wf-name">Reception Audio</div>
+            <div class="wf-detail">API ou import. Tous formats.</div>
+            <div class="wf-status done">COMPLETE</div>
+          </div>
+          <div class="wf-arrow">&rarr;</div>
+          <div class="wf-node done">
+            <div class="wf-id">02</div>
+            <div class="wf-name">Transcription IA</div>
+            <div class="wf-detail">Multi-langue. Diarisation.</div>
+            <div class="wf-status done">COMPLETE</div>
+          </div>
+          <div class="wf-arrow">&rarr;</div>
+          <div class="wf-node done">
+            <div class="wf-id">03</div>
+            <div class="wf-name">Detection Client</div>
+            <div class="wf-detail">Identification auto + script.</div>
+            <div class="wf-status done">COMPLETE</div>
+          </div>
+          <div class="wf-arrow">&rarr;</div>
+          <div class="wf-node active">
+            <div class="wf-id">04</div>
+            <div class="wf-name">Evaluation IA</div>
+            <div class="wf-detail">Scoring par grille complete.</div>
+            <div class="wf-status run">EN COURS</div>
+          </div>
+        </div>
+        <div style="display:flex;">
+          <div style="flex:3;"></div>
+          <div class="wf-down" style="flex:1; justify-content:center;">&darr;</div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-node">
+            <div class="wf-id">08</div>
+            <div class="wf-name">Rapport Final</div>
+            <div class="wf-detail">PDF & Excel.</div>
+            <div class="wf-status wait">EN ATTENTE</div>
+          </div>
+          <div class="wf-arrow">&larr;</div>
+          <div class="wf-node">
+            <div class="wf-id">07</div>
+            <div class="wf-name">Normalisation</div>
+            <div class="wf-detail">Regles metier. Seuils.</div>
+            <div class="wf-status wait">EN ATTENTE</div>
+          </div>
+          <div class="wf-arrow">&larr;</div>
+          <div class="wf-node">
+            <div class="wf-id">06</div>
+            <div class="wf-name">Conformite</div>
+            <div class="wf-detail">Criteres reglementaires.</div>
+            <div class="wf-status wait">EN ATTENTE</div>
+          </div>
+          <div class="wf-arrow">&larr;</div>
+          <div class="wf-node">
+            <div class="wf-id">05</div>
+            <div class="wf-name">Adherence Script</div>
+            <div class="wf-detail">Verification phase par phase.</div>
+            <div class="wf-status wait">EN ATTENTE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    const c = document.getElementById('wf-particles');
+    if (!c) return;
+    const ctx = c.getContext('2d');
+    let w, h;
+    function resize() { w = c.width = c.offsetWidth * 2; h = c.height = c.offsetHeight * 2; }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const particles = [];
+    for (let i = 0; i < 30; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        speed: Math.random() * 2 + 1,
+        size: Math.random() * 3 + 1,
+        opacity: Math.random() * 0.4 + 0.1
+      });
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      for (const p of particles) {
+        // Moving from left to right like data flowing
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(139, 92, 246, ${p.opacity})`;
+        ctx.fill();
+
+        // Trail
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p.x - p.speed * 10, p.y);
+        ctx.strokeStyle = `rgba(139, 92, 246, ${p.opacity * 0.3})`;
+        ctx.lineWidth = p.size * 0.5;
+        ctx.stroke();
+
+        p.x += p.speed;
+        if (p.x > w + 20) {
+          p.x = -20;
+          p.y = Math.random() * h;
+        }
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+
+    // Mouse tilt on the workflow board
+    const board = document.querySelector('.wf-board');
+    if (board) {
+      const section = c.closest('section');
+      section.addEventListener('mousemove', (e) => {
+        const rect = section.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        board.style.transform = `rotateX(${12 - y * 8}deg) rotateY(${-3 + x * 8}deg) translateZ(0)`;
+      });
+      section.addEventListener('mouseleave', () => {
+        board.style.transform = 'rotateX(12deg) rotateY(-3deg) translateZ(0)';
+      });
+    }
+  })();
+  </script>
+  <aside class="notes">
+    "Voici ce qui se passe sous le capot. 8 etapes automatisees.
+    L'appel entre — le rapport sort. Zero intervention."
+  </aside>
+</section>
+
+      <!-- 07-demo.html -->
+<section class="cx">
+  <div class="demo-block">
+    <div class="demo-play">&#9654;</div>
+    <h2><span class="gr">Demo en direct</span></h2>
+    <p class="sub" style="margin:8px auto 0;">Voyons BrainQA en action</p>
+    <div class="g4" style="max-width:660px; margin:26px auto 0;">
+      <div style="background:var(--card); border:1px solid var(--border); padding:12px; text-align:center;">
+        <div style="font-size:0.42em; color:var(--v400); font-weight:700;">01</div>
+        <div style="font-size:0.56em; font-weight:600; color:#fff;">Dashboard</div>
+      </div>
+      <div style="background:var(--card); border:1px solid var(--border); padding:12px; text-align:center;">
+        <div style="font-size:0.42em; color:var(--v400); font-weight:700;">02</div>
+        <div style="font-size:0.56em; font-weight:600; color:#fff;">Import audio</div>
+      </div>
+      <div style="background:var(--card); border:1px solid var(--border); padding:12px; text-align:center;">
+        <div style="font-size:0.42em; color:var(--v400); font-weight:700;">03</div>
+        <div style="font-size:0.56em; font-weight:600; color:#fff;">Pipeline IA</div>
+      </div>
+      <div style="background:var(--card); border:1px solid var(--border); padding:12px; text-align:center;">
+        <div style="font-size:0.42em; color:var(--v400); font-weight:700;">04</div>
+        <div style="font-size:0.56em; font-weight:600; color:#fff;">Rapport</div>
+      </div>
+    </div>
+  </div>
+  <aside class="notes">
+    PAUSE — Basculez sur le navigateur. 5 minutes max.
+  </aside>
+</section>
+
+      <!-- 08-features.html -->
+<section>
+  <div class="tag">Fonctionnalites</div>
+  <h2>Tout ce dont votre equipe a besoin</h2>
+  <div class="g3">
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 3v18"/></svg></div>
+      <div class="card-title">Grilles personnalisees</div>
+      <div class="card-desc">Importez vos cadres de notation. Themes ponderes, items configurables, scores sur mesure.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="card-title">Conformite automatique</div>
+      <div class="card-desc">Criteres par severite. Signalement automatique des violations. Piste d'audit complete.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <div class="card-title">Scoring IA calibre</div>
+      <div class="card-desc">Modeles calibres sur vos standards. Resultats coherents et reproductibles.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+      <div class="card-title">Analytics temps reel</div>
+      <div class="card-desc">Dashboard en direct. Tendances agents. Distribution des scores par client et theme.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+      <div class="card-title">Rapports PDF & Excel</div>
+      <div class="card-desc">Rapports d'audit detailles. Prets pour les regulateurs et les revues internes.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+      <div class="card-title">API REST ouverte</div>
+      <div class="card-desc">Integrez votre telephonie, outils BI, CRM. Import temps reel ou en lot.</div>
+    </div>
+  </div>
+  <aside class="notes">
+    Ciblez 2-3 features selon le client.
+    Responsable qualite : grilles + calibration.
+    Directeur : analytics + rapports.
+  </aside>
+</section>
+
+      <!-- 09-usecases.html -->
+<section>
+  <div class="tag">Cas d'usage</div>
+  <h2>Concu pour chaque equipe</h2>
+  <div class="g3">
+    <div class="uc-card">
+      <div class="uc-title">Assurance Qualite</div>
+      <div class="uc-desc">Evaluations automatisees avec vos grilles. Scoring coherent. Coaching cible. Suivi agent.</div>
+      <div class="uc-num">+98%</div>
+      <div class="uc-num-lbl">precision vs. audit manuel</div>
+    </div>
+    <div class="uc-card" style="border-top-color: var(--v400);">
+      <div class="uc-title">Conformite & Risques</div>
+      <div class="uc-desc">Conformite sur chaque interaction. Detection des ecarts de script. Rapports d'audit automatiques.</div>
+      <div class="uc-num">35%</div>
+      <div class="uc-num-lbl">amelioration adherence script</div>
+    </div>
+    <div class="uc-card" style="border-top-color: var(--emerald);">
+      <div class="uc-title">Performance Commerciale</div>
+      <div class="uc-desc">Conversations commerciales analysees. Schemas gagnants. Repliquez les meilleurs vendeurs.</div>
+      <div class="uc-num">+15%</div>
+      <div class="uc-num-lbl">taux de conversion</div>
+    </div>
+  </div>
+  <aside class="notes">
+    BPO → QA. Energie/Telecom → Conformite. Commercial → Performance.
+  </aside>
+</section>
+
+      <!-- 10-security.html -->
+<section>
+  <div class="tag">Securite & Protection des Donnees</div>
+  <h2>Vos donnees sont <span class="v4">notre priorite</span></h2>
+  <div class="g3">
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+      <div class="sec-title">Chiffrement bout en bout</div>
+      <div class="sec-desc">Donnees chiffrees au repos et en transit. Audio, transcriptions et evaluations proteges.</div>
+    </div>
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="sec-title">Aucune retention par l'IA</div>
+      <div class="sec-desc">Nos fournisseurs ne stockent jamais vos donnees. Aucun entrainement sur vos appels.</div>
+    </div>
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+      <div class="sec-title">Conforme RGPD</div>
+      <div class="sec-desc">Hebergement europeen. Minimisation des donnees. Droit a l'effacement.</div>
+    </div>
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
+      <div class="sec-title">Controle d'acces par role</div>
+      <div class="sec-desc">Permissions granulaires. Chaque action tracee et horodatee.</div>
+    </div>
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8"/><rect x="2" y="14" width="20" height="8"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+      <div class="sec-title">Infrastructure dediee</div>
+      <div class="sec-desc">Pas de base partagee. Votre instance, votre serveur. Isolation totale.</div>
+    </div>
+    <div class="sec-card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div class="sec-title">Fournisseurs certifies</div>
+      <div class="sec-desc">Partenaires certifies. Audits de securite reguliers.</div>
+    </div>
+  </div>
+  <aside class="notes">
+    "Vos enregistrements restent sur VOTRE serveur.
+    L'IA ne recoit que le texte. Infrastructure dediee = isolation totale."
+  </aside>
+</section>
+
+      <!-- 11-industries.html -->
+<section class="cx">
+  <div class="tag">Multi-Industries</div>
+  <h2>Nous nous adaptons a <span class="gr">votre reglementation</span></h2>
+  <div style="display:flex; justify-content:center; gap:16px; margin-top:26px; flex-wrap:wrap;">
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <div class="ind-name">Energie</div>
+    </div>
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      <div class="ind-name">Telecom</div>
+    </div>
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <div class="ind-name">Assurance</div>
+    </div>
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      <div class="ind-name">Banque</div>
+    </div>
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+      <div class="ind-name">Commerce</div>
+    </div>
+    <div class="ind-tag">
+      <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+      <div class="ind-name">BPO</div>
+    </div>
+  </div>
+  <p class="sub" style="text-align:center; margin:20px auto 0;">
+    Chaque industrie a ses exigences. Nos grilles et criteres
+    s'adaptent a votre cadre reglementaire.
+  </p>
+  <aside class="notes">
+    "Energie, telecom, BPO — on s'adapte. Memes grilles que les votres."
+  </aside>
+</section>
+
+      <!-- 12-roi.html -->
+<section>
+  <div class="tag">Retour sur investissement</div>
+  <h2>Rentabilise en <span class="v4">3 mois</span></h2>
+  <table class="tbl">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Audit Manuel</th>
+        <th>BrainQA</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cout par appel</td>
+        <td class="old">5-8 &euro;</td>
+        <td class="good">0,25-0,35 &euro;</td>
+      </tr>
+      <tr>
+        <td>Temps par appel</td>
+        <td class="old">15-20 min</td>
+        <td class="good">&lt; 2 min</td>
+      </tr>
+      <tr>
+        <td>Couverture</td>
+        <td class="old">2-3%</td>
+        <td class="good">100%</td>
+      </tr>
+      <tr>
+        <td>Coherence</td>
+        <td class="old">Variable</td>
+        <td class="good">98.2%</td>
+      </tr>
+      <tr>
+        <td>Disponibilite</td>
+        <td class="old">Heures ouvrables</td>
+        <td class="good">24/7</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sub" style="text-align:center; margin:16px auto 0;">
+    Pour 10 000 appels/mois : economie estimee de
+    <span class="v4" style="font-weight:800; font-size:1.3em;">47 000 &euro;/an</span>
+  </p>
+  <aside class="notes">
+    "5-8 euros en manuel, 25-35 centimes avec BrainQA.
+    Sur 10 000 appels/mois, presque 50 000 euros/an."
+  </aside>
+</section>
+
+      <!-- 13-pricing.html -->
+<section class="cx">
+  <div class="tag">Tarifs</div>
+  <h2>Des offres qui s'adaptent a votre equipe</h2>
+  <div class="g3" style="max-width:820px; margin:20px auto 0;">
+    <div class="price-card">
+      <div class="p-name">Starter</div>
+      <div class="p-price">Nous contacter</div>
+      <div class="p-list">
+        <span class="ck">&#10003;</span> 500 evaluations / mois<br>
+        <span class="ck">&#10003;</span> 1 operation<br>
+        <span class="ck">&#10003;</span> 1 grille d'evaluation<br>
+        <span class="ck">&#10003;</span> Transcription & scoring IA<br>
+        <span class="ck">&#10003;</span> Export PDF<br>
+        <span class="ck">&#10003;</span> Support email
+      </div>
+    </div>
+    <div class="price-card pop">
+      <div class="pop-tag">POPULAIRE</div>
+      <div class="p-name">Professionnel</div>
+      <div class="p-price">Nous contacter</div>
+      <div class="p-list">
+        <span class="ck">&#10003;</span> 5 000 evaluations / mois<br>
+        <span class="ck">&#10003;</span> Operations illimitees<br>
+        <span class="ck">&#10003;</span> Grilles & scripts illimites<br>
+        <span class="ck">&#10003;</span> Moteur de conformite<br>
+        <span class="ck">&#10003;</span> Dashboard analytics<br>
+        <span class="ck">&#10003;</span> Acces API<br>
+        <span class="ck">&#10003;</span> Calibration IA<br>
+        <span class="ck">&#10003;</span> Support prioritaire
+      </div>
+    </div>
+    <div class="price-card">
+      <div class="p-name">Entreprise</div>
+      <div class="p-price">Sur mesure</div>
+      <div class="p-list">
+        <span class="ck">&#10003;</span> Evaluations illimitees<br>
+        <span class="ck">&#10003;</span> Multi-tenant<br>
+        <span class="ck">&#10003;</span> IA personnalisee<br>
+        <span class="ck">&#10003;</span> SSO / SAML<br>
+        <span class="ck">&#10003;</span> Infrastructure dediee<br>
+        <span class="ck">&#10003;</span> SLA garanti<br>
+        <span class="ck">&#10003;</span> On-premise disponible<br>
+        <span class="ck">&#10003;</span> Account manager dedie
+      </div>
+    </div>
+  </div>
+  <p class="sub" style="text-align:center; margin:14px auto 0;">
+    Pilote gratuit. Sans carte bancaire. Sans engagement.
+  </p>
+  <aside class="notes">
+    "Le pilote est gratuit. Envoyez un enregistrement, audit sous 24h."
+  </aside>
+</section>
+
+      <!-- 14-differentiators.html -->
+<section class="cx">
+  <div class="tag">Ce qui nous differencie</div>
+  <h2>Pourquoi <span class="gr-va">BrainQA</span> ?</h2>
+  <div class="g3" style="max-width:840px; margin:22px auto 0;">
+    <div class="diff-card">
+      <div class="diff-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <div class="diff-title">Vos grilles, vos regles</div>
+      <div class="diff-desc">On s'adapte a votre methodologie. Importez vos cadres existants. Pas de reformatage.</div>
+    </div>
+    <div class="diff-card">
+      <div class="diff-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
+      <div class="diff-title">L'humain au centre</div>
+      <div class="diff-desc">L'IA gere le volume. Votre equipe decide. Revoyez, calibrez et approuvez a chaque etape.</div>
+    </div>
+    <div class="diff-card">
+      <div class="diff-ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8"/><rect x="2" y="14" width="20" height="8"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+      <div class="diff-title">Infrastructure dediee</div>
+      <div class="diff-desc">Pas de base partagee. Votre instance, votre serveur. Isolation totale des donnees.</div>
+    </div>
+  </div>
+  <aside class="notes">
+    Sans nommer le concurrent.
+    "On travaille avec VOS methodes. L'IA ne remplace pas vos auditeurs —
+    elle leur donne des super-pouvoirs."
+  </aside>
+</section>
+
+      <!-- 15-cta.html -->
+<section class="cx">
+  <h2 style="font-size: 1.9em;">
+    Pret a transformer votre<br>
+    <span class="gr">processus qualite</span> ?
+  </h2>
+  <div class="cta-block">
+    <div class="cta-main">Envoyez-nous un enregistrement + vos criteres.</div>
+    <div class="cta-big">Audit complet sous 24h.</div>
+    <div class="cta-sub">Sans engagement. Vos donnees restent securisees.</div>
+    <div class="cta-contact">
+      contact@nouraisolutions.com &nbsp;&middot;&nbsp; nouraisolutions.com
+    </div>
+  </div>
+  <div class="brand-sm" style="margin-top:26px;">
+    BrainQA &mdash; par Nourai Solutions
+  </div>
+  <aside class="notes">
+    "Envoyez un enregistrement avec vos grilles. Demain, audit complet — gratuit."
+  </aside>
+</section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: false,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      transitionSpeed: 'default',
+      fragments: true,
+      width: '100%',
+      height: '100%',
+      margin: 0.04,
+      minScale: 1,
+      maxScale: 1,
+      plugins: [RevealNotes]
+    });
+  </script>
+</body>
+</html>

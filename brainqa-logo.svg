@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="brand-gr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <!-- Brain icon -->
+  <g transform="translate(5, 5) scale(0.42)" stroke="#a78bfa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left hemisphere -->
+    <path d="M60 15 C38 15, 20 28, 20 50 C20 56, 24 62, 18 68 C13 72, 16 82, 25 84 C20 90, 26 100, 38 100 C44 106, 55 106, 60 100"/>
+    <!-- Right hemisphere -->
+    <path d="M60 15 C82 15, 100 28, 100 50 C100 56, 96 62, 102 68 C107 72, 104 82, 95 84 C100 90, 94 100, 82 100 C76 106, 65 106, 60 100"/>
+    <!-- Neural dots -->
+    <circle cx="42" cy="45" r="3" fill="#8b5cf6" opacity="0.7"/>
+    <circle cx="60" cy="35" r="2.5" fill="#a78bfa" opacity="0.6"/>
+    <circle cx="78" cy="45" r="3" fill="#8b5cf6" opacity="0.7"/>
+    <circle cx="50" cy="65" r="2.5" fill="#a78bfa" opacity="0.5"/>
+    <circle cx="70" cy="62" r="2" fill="#8b5cf6" opacity="0.6"/>
+    <circle cx="60" cy="80" r="3" fill="#a78bfa" opacity="0.7"/>
+    <!-- Connections -->
+    <line x1="42" y1="45" x2="60" y2="35" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="60" y1="35" x2="78" y2="45" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="42" y1="45" x2="50" y2="65" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+    <line x1="78" y1="45" x2="70" y2="62" stroke="#8b5cf6" stroke-width="1" opacity="0.3"/>
+    <line x1="50" y1="65" x2="60" y2="80" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="70" y1="62" x2="60" y2="80" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+  </g>
+  <!-- Text -->
+  <text x="58" y="40" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="30" fill="url(#brand-gr)" letter-spacing="-1">BrainQA</text>
+</svg>
