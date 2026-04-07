@@ -984,45 +984,111 @@
 <section class="cx" style="position:relative;">
   <div style="position:relative; z-index:1;">
     <div class="tag">Intelligence Qualite pour Centres d'Appels</div>
-    <!-- EVAVOC LOGO -->
-    <div style="margin: 0 auto 18px; width:110px; height:110px;">
-      <svg viewBox="0 0 110 110" width="110" height="110">
-        <defs>
-          <linearGradient id="evaBg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#1e1b4b"/>
-            <stop offset="100%" stop-color="#0d0b22"/>
-          </linearGradient>
-          <linearGradient id="evaBarGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#c4b5fd"/>
-            <stop offset="60%" stop-color="#8b5cf6"/>
-            <stop offset="100%" stop-color="#6d28d9"/>
-          </linearGradient>
-          <filter id="evaGlow" x="-40%" y="-40%" width="180%" height="180%">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-            <feMerge>
-              <feMergeNode in="blur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
-        </defs>
-        <rect x="3" y="3" width="104" height="104" rx="20" fill="url(#evaBg)" stroke="rgba(139,92,246,0.45)" stroke-width="1.5"/>
-        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(139,92,246,0.25)" stroke-width="1.5" class="eva-ring"/>
-        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(167,139,250,0.12)" stroke-width="3"  class="eva-ring r2"/>
-        <rect class="eva-bar eb1" x="12" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
-        <rect class="eva-bar eb2" x="25" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb3" x="38" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb4" x="51" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb5" x="64" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb6" x="77" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb7" x="90" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
-      </svg>
+
+    <!-- EVAVOC LOGO — PNG from Gemini, sparkle clipped via CSS -->
+    <div style="
+      margin: 0 auto 14px;
+      width: 160px;
+      height: 88px;
+      overflow: hidden;
+      clip-path: inset(4% 14% 14% 4%);
+      position: relative;
+    ">
+      <img
+        src="evavoc-logo.png"
+        alt="evaVoc logo"
+        style="
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+        "
+      >
     </div>
+
     <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">evaVoc</span></h1>
     <p class="sub">Chaque appel evalue. Chaque insight livre.</p>
-    <div class="brand-sm">par NouraiSolutions</div>
+    <div class="brand-sm">par NourAI Solutions</div>
   </div>
   <aside class="notes">
-    "Bonjour. Je suis [Nom], NouraiSolutions."
+    "Bonjour. Je suis [Nom], NourAI Solutions."
+  </aside>
+</section>
+
+      <!-- 01b-company.html -->
+<section>
+  <div class="tag">Qui sommes-nous</div>
+  <h2 style="margin-bottom:4px;">
+    <span class="gr">NourAI Solutions</span>
+  </h2>
+  <p class="sub" style="margin-bottom:20px; max-width:620px;">
+    Cabinet tunisien de conseil en IA et développement logiciel —
+    spécialisé en intelligence artificielle, automatisation et logiciels sur mesure.
+  </p>
+
+  <!-- Team cards -->
+  <div class="g3" style="gap:12px; margin-top:0;">
+
+    <!-- Nour — CEO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.3); border-top:3px solid var(--v500); padding:20px 16px; text-align:center; transition:transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 14px 36px rgba(139,92,246,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <!-- Avatar -->
+      <div style="width:56px; height:56px; margin:0 auto 12px; border-radius:14px; background:linear-gradient(135deg,#a78bfa,#ec4899,#7c3aed); display:flex; align-items:center; justify-content:center; font-size:1.1em; font-weight:900; color:#fff; position:relative;">
+        NS
+        <div style="position:absolute; inset:-3px; border-radius:17px; background:linear-gradient(135deg,rgba(167,139,250,0.3),rgba(236,72,153,0.2)); z-index:-1; filter:blur(6px);"></div>
+      </div>
+      <div style="font-size:0.66em; font-weight:800; color:#fff; margin-bottom:3px;">Nour Sanhaji</div>
+      <div style="display:inline-block; font-size:0.36em; font-weight:700; letter-spacing:0.1em; color:var(--v400); border:1px solid rgba(139,92,246,0.3); padding:2px 10px; margin-bottom:8px;">CEO</div>
+      <div style="font-size:0.4em; color:var(--dim2); line-height:1.5;">Vision · Stratégie · Business Development</div>
+    </div>
+
+    <!-- Rami — COO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.2); border-top:3px solid var(--v400); padding:20px 16px; text-align:center; transition:transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 14px 36px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:56px; height:56px; margin:0 auto 12px; border-radius:14px; background:linear-gradient(135deg,#8b5cf6,#10b981); display:flex; align-items:center; justify-content:center; font-size:1.1em; font-weight:900; color:#fff;">
+        RB
+      </div>
+      <div style="font-size:0.66em; font-weight:800; color:#fff; margin-bottom:3px;">Rami Ben Sassi</div>
+      <div style="display:inline-block; font-size:0.36em; font-weight:700; letter-spacing:0.1em; color:var(--v400); border:1px solid rgba(139,92,246,0.3); padding:2px 10px; margin-bottom:8px;">COO</div>
+      <div style="font-size:0.4em; color:var(--dim2); line-height:1.5;">Conseil IA · Administration · Finance</div>
+    </div>
+
+    <!-- Taher — CTO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.2); border-top:3px solid var(--v300); padding:20px 16px; text-align:center; transition:transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 14px 36px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:56px; height:56px; margin:0 auto 12px; border-radius:14px; background:linear-gradient(135deg,#8b5cf6,#3b82f6); display:flex; align-items:center; justify-content:center; font-size:1.1em; font-weight:900; color:#fff;">
+        TB
+      </div>
+      <div style="font-size:0.66em; font-weight:800; color:#fff; margin-bottom:3px;">Taher Ben Sassi</div>
+      <div style="display:inline-block; font-size:0.36em; font-weight:700; letter-spacing:0.1em; color:var(--v400); border:1px solid rgba(139,92,246,0.3); padding:2px 10px; margin-bottom:8px;">CTO</div>
+      <div style="font-size:0.4em; color:var(--dim2); line-height:1.5;">Architecture · IA · Développement Full-Stack</div>
+    </div>
+
+  </div>
+
+  <!-- Tagline strip -->
+  <div style="margin-top:18px; border:1px solid rgba(139,92,246,0.15); background:rgba(139,92,246,0.04); padding:12px 20px; display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; gap:8px;">
+    <div style="text-align:center;">
+      <div style="font-size:0.38em; color:var(--dim2); text-transform:uppercase; letter-spacing:0.08em;">Spécialité</div>
+      <div style="font-size:0.5em; font-weight:700; color:#fff;">IA & Automatisation</div>
+    </div>
+    <div style="width:1px; height:28px; background:rgba(255,255,255,0.08);"></div>
+    <div style="text-align:center;">
+      <div style="font-size:0.38em; color:var(--dim2); text-transform:uppercase; letter-spacing:0.08em;">Secteur</div>
+      <div style="font-size:0.5em; font-weight:700; color:#fff;">Centres d'appels & BPO</div>
+    </div>
+    <div style="width:1px; height:28px; background:rgba(255,255,255,0.08);"></div>
+    <div style="text-align:center;">
+      <div style="font-size:0.38em; color:var(--dim2); text-transform:uppercase; letter-spacing:0.08em;">Produit phare</div>
+      <div style="font-size:0.5em; font-weight:700;"><span class="gr">evaVoc</span></div>
+    </div>
+    <div style="width:1px; height:28px; background:rgba(255,255,255,0.08);"></div>
+    <div style="text-align:center;">
+      <div style="font-size:0.38em; color:var(--dim2); text-transform:uppercase; letter-spacing:0.08em;">Web</div>
+      <div style="font-size:0.5em; font-weight:700; color:var(--v400);">nouraisolutions.com</div>
+    </div>
+  </div>
+
+  <aside class="notes">
+    "Avant de vous présenter evaVoc, permettez-moi de vous présenter l'équipe derrière.
+    NourAI Solutions — trois co-fondateurs, une vision commune : l'IA au service de vos opérations."
   </aside>
 </section>
 
