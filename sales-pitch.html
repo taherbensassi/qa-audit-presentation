@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrainQA — Sales Pitch</title>
+  <title>evaVoc — Sales Pitch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -875,6 +875,92 @@
   z-index: 1;
 }
 
+/* ========== COMPARISON TABLE ========== */
+.comp-split {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
+  gap: 0;
+  margin-top: 10px;
+  height: calc(100% - 60px);
+}
+
+.comp-col {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.comp-col-old { padding-right: 14px; }
+.comp-col-new { padding-left: 14px; }
+
+.comp-col-head {
+  font-size: 0.78em;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.comp-old-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 0.5em;
+  color: var(--dim);
+  line-height: 1.4;
+}
+
+.comp-new-item {
+  background: rgba(139,92,246,0.10);
+  border: 1px solid rgba(139,92,246,0.20);
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 0.5em;
+  color: #fff;
+  line-height: 1.4;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.comp-new-item .ck {
+  color: var(--v400);
+  font-weight: 900;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.comp-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-divider-line {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(139,92,246,0.4), transparent);
+}
+
+/* Stagger comp items */
+.reveal .slides section.present .comp-old-item,
+.reveal .slides section.present .comp-new-item {
+  animation: scale-in 0.4s ease both;
+}
+.reveal .slides section.present .comp-old-item:nth-child(2),
+.reveal .slides section.present .comp-new-item:nth-child(2) { animation-delay: 0.08s; }
+.reveal .slides section.present .comp-old-item:nth-child(3),
+.reveal .slides section.present .comp-new-item:nth-child(3) { animation-delay: 0.16s; }
+.reveal .slides section.present .comp-old-item:nth-child(4),
+.reveal .slides section.present .comp-new-item:nth-child(4) { animation-delay: 0.24s; }
+.reveal .slides section.present .comp-old-item:nth-child(5),
+.reveal .slides section.present .comp-new-item:nth-child(5) { animation-delay: 0.32s; }
+.reveal .slides section.present .comp-old-item:nth-child(6),
+.reveal .slides section.present .comp-new-item:nth-child(6) { animation-delay: 0.40s; }
+.reveal .slides section.present .comp-old-item:nth-child(7),
+.reveal .slides section.present .comp-new-item:nth-child(7) { animation-delay: 0.48s; }
+
 /* ========== OVERRIDES ========== */
 .reveal .slide-number { display: none !important; }
 .reveal .progress span { background: var(--v500); }
@@ -928,7 +1014,7 @@
         <circle cx="60" cy="60" r="55" stroke="#7c3aed" stroke-width="0.5" fill="none" opacity="0.15" class="pulse-ring r2"/>
       </svg>
     </div>
-    <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">BrainQA</span></h1>
+    <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">evaVoc</span></h1>
     <p class="sub">Chaque appel evalue. Chaque insight livre.</p>
     <div class="brand-sm">par Nourai Solutions</div>
   </div>
@@ -963,11 +1049,6 @@
 <section class="cx">
   <h2>Le cout de l'<span class="v4">invisible</span></h2>
   <div class="compare">
-    <div class="cmp-box">
-      <div class="cmp-lbl">Cout auditeur / appel</div>
-      <div class="cmp-val">5-8 &euro;</div>
-    </div>
-    <div class="cmp-arr">&rarr;</div>
     <div class="cmp-box">
       <div class="cmp-lbl">Temps d'ecoute / appel</div>
       <div class="cmp-val">15-20 min</div>
@@ -1006,7 +1087,7 @@
       <!-- 05-product.html -->
 <section class="cx">
   <div class="tag">La Solution</div>
-  <h1 style="font-size:2.4em;"><span class="gr">BrainQA</span></h1>
+  <h1 style="font-size:2.4em;"><span class="gr">evaVoc</span></h1>
   <p class="sub" style="margin:8px auto 0;">
     Monitoring qualite 100% IA. Chaque conversation analysee
     avec la precision de vos meilleurs auditeurs.
@@ -1183,7 +1264,7 @@
   <div class="demo-block">
     <div class="demo-play">&#9654;</div>
     <h2><span class="gr">Demo en direct</span></h2>
-    <p class="sub" style="margin:8px auto 0;">Voyons BrainQA en action</p>
+    <p class="sub" style="margin:8px auto 0;">Voyons evaVoc en action</p>
     <div class="g4">
       <div style="background:var(--card); border:1px solid var(--border); padding:12px; text-align:center;">
         <div style="font-size:0.42em; color:var(--v400); font-weight:700;">01</div>
@@ -1280,6 +1361,39 @@
   </aside>
 </section>
 
+      <!-- 09b-compare.html -->
+<section style="padding: 24px 36px;">
+  <div class="tag">L'ancien monde vs evaVoc</div>
+  <div class="comp-split">
+    <div class="comp-col comp-col-old">
+      <div class="comp-col-head" style="color: var(--dim);">L'ancien monde</div>
+      <div class="comp-old-item">1 à 2 % des appels écoutés manuellement</div>
+      <div class="comp-old-item">Évaluations chronophages et subjectives</div>
+      <div class="comp-old-item">Reporting Excel, incomplet et peu exploitable</div>
+      <div class="comp-old-item">Feedbacks irréguliers aux agents</div>
+      <div class="comp-old-item">Vision incomplète des motifs d'appels</div>
+      <div class="comp-old-item">Difficulté à prouver la valeur ajoutée</div>
+      <div class="comp-old-item">Perception d'un prestataire exécutant</div>
+    </div>
+    <div class="comp-divider">
+      <div class="comp-divider-line"></div>
+    </div>
+    <div class="comp-col comp-col-new">
+      <div class="comp-col-head" style="color: var(--v400);"><span class="gr">evaVoc</span></div>
+      <div class="comp-new-item"><span class="ck">✓</span> 100 % des appels analysés automatiquement avec l'IA</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Scoring qualité objectif, homogène et en temps réel</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Dashboards dynamiques à partager avec vos clients</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Coaching de vos managers basé sur les appels réels</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Enseignements structurés sur les flux confiés par chaque client</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Positionnement différenciant avec une offre IA intégrée</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Image d'un partenaire stratégique et innovant</div>
+    </div>
+  </div>
+  <aside class="notes">
+    "Voici la différence concrète. À gauche, le statu quo. À droite, ce que vous gagnez."
+  </aside>
+</section>
+
       <!-- 10-security.html -->
 <section>
   <div class="tag">Securite & Protection des Donnees</div>
@@ -1370,15 +1484,10 @@
       <tr>
         <th></th>
         <th>Audit Manuel</th>
-        <th>BrainQA</th>
+        <th>evaVoc</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Cout par appel</td>
-        <td class="old">5-8 &euro;</td>
-        <td class="good">0,25-0,35 &euro;</td>
-      </tr>
       <tr>
         <td>Temps par appel</td>
         <td class="old">15-20 min</td>
@@ -1401,75 +1510,17 @@
       </tr>
     </tbody>
   </table>
-  <p class="sub" style="text-align:center; margin:16px auto 0;">
-    Pour 10 000 appels/mois : economie estimee de
-    <span class="v4" style="font-weight:800; font-size:1.3em;">47 000 &euro;/an</span>
-  </p>
   <aside class="notes">
-    "5-8 euros en manuel, 25-35 centimes avec BrainQA.
+    "5-8 euros en manuel, 25-35 centimes avec evaVoc.
     Sur 10 000 appels/mois, presque 50 000 euros/an."
   </aside>
 </section>
 
-      <!-- 13-pricing.html -->
-<section class="cx">
-  <div class="tag">Tarifs</div>
-  <h2>Des offres qui s'adaptent a votre equipe</h2>
-  <div class="g3">
-    <div class="price-card">
-      <div class="p-name">Starter</div>
-      <div class="p-price">Nous contacter</div>
-      <div class="p-list">
-        <span class="ck">&#10003;</span> 500 evaluations / mois<br>
-        <span class="ck">&#10003;</span> 1 operation<br>
-        <span class="ck">&#10003;</span> 1 grille d'evaluation<br>
-        <span class="ck">&#10003;</span> Transcription & scoring IA<br>
-        <span class="ck">&#10003;</span> Export PDF<br>
-        <span class="ck">&#10003;</span> Support email
-      </div>
-    </div>
-    <div class="price-card pop">
-      <div class="pop-tag">POPULAIRE</div>
-      <div class="p-name">Professionnel</div>
-      <div class="p-price">Nous contacter</div>
-      <div class="p-list">
-        <span class="ck">&#10003;</span> 5 000 evaluations / mois<br>
-        <span class="ck">&#10003;</span> Operations illimitees<br>
-        <span class="ck">&#10003;</span> Grilles & scripts illimites<br>
-        <span class="ck">&#10003;</span> Moteur de conformite<br>
-        <span class="ck">&#10003;</span> Dashboard analytics<br>
-        <span class="ck">&#10003;</span> Acces API<br>
-        <span class="ck">&#10003;</span> Calibration IA<br>
-        <span class="ck">&#10003;</span> Support prioritaire
-      </div>
-    </div>
-    <div class="price-card">
-      <div class="p-name">Entreprise</div>
-      <div class="p-price">Sur mesure</div>
-      <div class="p-list">
-        <span class="ck">&#10003;</span> Evaluations illimitees<br>
-        <span class="ck">&#10003;</span> Multi-tenant<br>
-        <span class="ck">&#10003;</span> IA personnalisee<br>
-        <span class="ck">&#10003;</span> SSO / SAML<br>
-        <span class="ck">&#10003;</span> Infrastructure dediee<br>
-        <span class="ck">&#10003;</span> SLA garanti<br>
-        <span class="ck">&#10003;</span> On-premise disponible<br>
-        <span class="ck">&#10003;</span> Account manager dedie
-      </div>
-    </div>
-  </div>
-  <p class="sub" style="text-align:center; margin:14px auto 0;">
-    Pilote gratuit. Sans carte bancaire. Sans engagement.
-  </p>
-  <aside class="notes">
-    "Le pilote est gratuit. Envoyez un enregistrement, audit sous 24h."
-  </aside>
-</section>
 
       <!-- 14-differentiators.html -->
 <section class="cx">
   <div class="tag">Ce qui nous differencie</div>
-  <h2>Pourquoi <span class="gr-va">BrainQA</span> ?</h2>
+  <h2>Pourquoi <span class="gr">evaVoc</span> ?</h2>
   <div class="g3">
     <div class="diff-card">
       <div class="diff-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
@@ -1509,7 +1560,7 @@
     </div>
   </div>
   <div class="brand-sm" style="margin-top:26px;">
-    BrainQA &mdash; par Nourai Solutions
+    evaVoc &mdash; par Nourai Solutions
   </div>
   <aside class="notes">
     "Envoyez un enregistrement avec vos grilles. Demain, audit complet — gratuit."
