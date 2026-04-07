@@ -36,18 +36,11 @@
 
 .reveal .slides section {
   text-align: left;
-  padding: 30px 40px;
+  padding: 24px 32px;
   background: transparent;
   box-sizing: border-box;
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  max-height: 100%;
+  font-size: 18px;
 }
-
-/* Scrollbar style */
-.reveal .slides section::-webkit-scrollbar { width: 4px; }
-.reveal .slides section::-webkit-scrollbar-track { background: transparent; }
-.reveal .slides section::-webkit-scrollbar-thumb { background: rgba(139,92,246,0.3); border-radius: 2px; }
 
 .reveal h1, .reveal h2, .reveal h3 {
   text-transform: none;
@@ -57,9 +50,9 @@
   line-height: 1.15;
 }
 
-.reveal h1 { font-size: 2.2em; }
-.reveal h2 { font-size: 1.6em; }
-.reveal h3 { font-size: 1.05em; color: var(--v400); font-weight: 600; }
+.reveal h1 { font-size: 1.8em; }
+.reveal h2 { font-size: 1.35em; }
+.reveal h3 { font-size: 0.85em; color: var(--v400); font-weight: 600; }
 
 .cx { text-align: center !important; }
 
@@ -90,11 +83,10 @@
 }
 
 .sub {
-  font-size: 0.72em;
+  font-size: 0.65em;
   color: rgba(255,255,255,0.80);
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
-  max-width: 700px;
 }
 .cx .sub { margin: 0 auto; }
 
@@ -180,8 +172,8 @@
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 20px 24px;
-  margin: 8px 0;
+  padding: 12px 16px;
+  margin: 5px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -192,8 +184,8 @@
 
 .card-accent { border-left: 3px solid var(--v500); }
 
-.card-title { font-size: 0.68em; font-weight: 700; color: #fff; margin-bottom: 4px; }
-.card-desc { font-size: 0.55em; color: rgba(255,255,255,0.75); line-height: 1.5; }
+.card-title { font-size: 0.6em; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.card-desc { font-size: 0.48em; color: rgba(255,255,255,0.75); line-height: 1.4; }
 
 /* ========== GRIDS ========== */
 .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
@@ -204,7 +196,7 @@
 .metric {
   background: var(--v950);
   border: 1px solid rgba(139, 92, 246, 0.2);
-  padding: 20px 14px;
+  padding: 14px 10px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -215,13 +207,13 @@
 }
 
 .metric .num {
-  font-size: 2.2em;
+  font-size: 1.6em;
   font-weight: 900;
   color: #fff;
   line-height: 1.1;
 }
 
-.metric .lbl { font-size: 0.46em; color: var(--dim); margin-top: 5px; font-weight: 500; }
+.metric .lbl { font-size: 0.42em; color: var(--dim); margin-top: 3px; font-weight: 500; }
 
 /* ========== 3D WORKFLOW — THE SHOWSTOPPER ========== */
 .wf-universe {
@@ -404,19 +396,19 @@
 }
 
 .wf-node .wf-id {
-  font-size: 0.36em;
+  font-size: 0.3em;
   color: var(--v400);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.wf-node .wf-name { font-size: 0.56em; font-weight: 700; color: #fff; margin-top: 1px; }
-.wf-node .wf-detail { font-size: 0.38em; color: var(--dim2); margin-top: 2px; line-height: 1.3; }
+.wf-node .wf-name { font-size: 0.48em; font-weight: 700; color: #fff; margin-top: 1px; }
+.wf-node .wf-detail { font-size: 0.32em; color: var(--dim2); margin-top: 1px; line-height: 1.2; }
 
 .wf-status {
   display: inline-block;
-  font-size: 0.32em;
+  font-size: 0.26em;
   font-weight: 700;
   padding: 2px 7px;
   margin-top: 4px;
@@ -450,21 +442,21 @@
 .tbl {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 18px;
-  font-size: 0.63em;
+  margin-top: 12px;
+  font-size: 0.52em;
 }
 
 .tbl th {
   background: var(--v950);
   border-bottom: 2px solid var(--v500);
-  padding: 10px 14px;
+  padding: 7px 10px;
   text-align: left;
   font-weight: 700;
   color: var(--v400);
 }
 
 .tbl td {
-  padding: 9px 14px;
+  padding: 6px 10px;
   border-bottom: 1px solid var(--border);
   color: var(--text);
 }
@@ -486,7 +478,7 @@
 .price-card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 24px 18px;
+  padding: 16px 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -512,10 +504,10 @@
   margin-bottom: 8px;
 }
 
-.price-card .p-name { font-size: 0.88em; font-weight: 800; color: #fff; }
-.price-card .p-price { font-size: 0.58em; color: var(--dim); margin: 5px 0 12px; }
-.price-card .p-list { text-align: left; font-size: 0.46em; color: var(--dim); line-height: 2; }
-.price-card .p-list .ck { color: var(--v400); margin-right: 6px; }
+.price-card .p-name { font-size: 0.75em; font-weight: 800; color: #fff; }
+.price-card .p-price { font-size: 0.48em; color: var(--dim); margin: 3px 0 8px; }
+.price-card .p-list { text-align: left; font-size: 0.38em; color: var(--dim); line-height: 1.8; }
+.price-card .p-list .ck { color: var(--v400); margin-right: 4px; }
 
 /* ========== ICON BOXES ========== */
 .ico-box {
@@ -579,25 +571,25 @@
   box-shadow: 0 12px 30px rgba(139,92,246,0.12);
 }
 
-.uc-title { font-size: 0.74em; font-weight: 700; color: #fff; margin-bottom: 8px; }
-.uc-desc { font-size: 0.46em; color: var(--dim); line-height: 1.5; margin-bottom: 10px; }
-.uc-num { font-size: 1.3em; font-weight: 900; color: #fff; }
-.uc-num-lbl { font-size: 0.38em; color: var(--dim2); }
+.uc-title { font-size: 0.62em; font-weight: 700; color: #fff; margin-bottom: 5px; }
+.uc-desc { font-size: 0.38em; color: var(--dim); line-height: 1.4; margin-bottom: 8px; }
+.uc-num { font-size: 1.1em; font-weight: 900; color: #fff; }
+.uc-num-lbl { font-size: 0.32em; color: var(--dim2); }
 
 /* ========== CTA ========== */
 .cta-block {
   background: var(--v950);
   border: 2px solid var(--v500);
-  padding: 34px;
+  padding: 24px;
   text-align: center;
   margin-top: 26px;
   animation: glow-breathe 3s ease-in-out infinite;
 }
 
-.cta-main { font-size: 0.92em; font-weight: 700; color: #fff; }
+.cta-main { font-size: 0.75em; font-weight: 700; color: #fff; }
 
 .cta-big {
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 900;
   background: linear-gradient(90deg, var(--v400), var(--v300), var(--v400));
   background-size: 200% auto;
@@ -672,14 +664,14 @@
   stroke-linejoin: round;
 }
 
-.diff-title { font-size: 0.68em; font-weight: 700; color: #fff; margin-bottom: 5px; }
-.diff-desc { font-size: 0.46em; color: var(--dim); line-height: 1.5; }
+.diff-title { font-size: 0.56em; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.diff-desc { font-size: 0.38em; color: var(--dim); line-height: 1.4; }
 
 /* ========== SECURITY ========== */
 .sec-card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 14px;
+  padding: 10px;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -688,8 +680,8 @@
   border-color: rgba(139,92,246,0.3);
 }
 
-.sec-title { font-size: 0.6em; font-weight: 700; color: #fff; margin-bottom: 3px; }
-.sec-desc { font-size: 0.44em; color: var(--dim); line-height: 1.4; }
+.sec-title { font-size: 0.5em; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.sec-desc { font-size: 0.36em; color: var(--dim); line-height: 1.3; }
 
 /* ========== DEMO ========== */
 .demo-block {
@@ -697,12 +689,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
+  min-height: 280px;
 }
 
 .demo-play {
-  width: 88px;
-  height: 88px;
+  width: 64px;
+  height: 64px;
   border: 2px solid var(--v500);
   display: flex;
   align-items: center;
@@ -769,39 +761,6 @@
   10% { opacity: 0.6; }
   90% { opacity: 0.6; }
   100% { bottom: 105%; opacity: 0; transform: scale(0.3); }
-}
-
-/* ========== EVAVOC LOGO ANIMATIONS ========== */
-.eva-bar {
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-}
-@keyframes ev-a { 0%,100%{transform:scaleY(0.12)} 50%{transform:scaleY(0.55)} }
-@keyframes ev-b { 0%,100%{transform:scaleY(0.5)}  50%{transform:scaleY(1)} }
-@keyframes ev-c { 0%,100%{transform:scaleY(0.75)} 50%{transform:scaleY(0.22)} }
-@keyframes ev-d { 0%,100%{transform:scaleY(1)}    50%{transform:scaleY(0.38)} }
-@keyframes ev-e { 0%,100%{transform:scaleY(0.6)}  50%{transform:scaleY(0.95)} }
-@keyframes ev-f { 0%,100%{transform:scaleY(0.28)} 50%{transform:scaleY(0.72)} }
-@keyframes ev-g { 0%,100%{transform:scaleY(0.18)} 50%{transform:scaleY(0.48)} }
-
-.eb1 { animation: ev-c 0.90s ease-in-out infinite; }
-.eb2 { animation: ev-e 1.10s ease-in-out 0.14s infinite; }
-.eb3 { animation: ev-b 0.85s ease-in-out 0.28s infinite; }
-.eb4 { animation: ev-d 1.00s ease-in-out 0.07s infinite; }
-.eb5 { animation: ev-a 0.95s ease-in-out 0.21s infinite; }
-.eb6 { animation: ev-f 1.15s ease-in-out 0.35s infinite; }
-.eb7 { animation: ev-g 0.88s ease-in-out 0.42s infinite; }
-
-.eva-ring {
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  animation: eva-ring-pulse 3s ease-out infinite;
-}
-.eva-ring.r2 { animation-delay: 1.5s; }
-
-@keyframes eva-ring-pulse {
-  0%   { transform: scale(1);    opacity: 0.4; }
-  100% { transform: scale(1.22); opacity: 0; }
 }
 
 /* ========== BRAIN LOGO ANIMATIONS ========== */
@@ -908,79 +867,79 @@
   z-index: 1;
 }
 
+/* ========== EVAVOC LOGO ========== */
+.eva-bar {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+@keyframes ev-a { 0%,100%{transform:scaleY(0.12)} 50%{transform:scaleY(0.55)} }
+@keyframes ev-b { 0%,100%{transform:scaleY(0.5)}  50%{transform:scaleY(1)} }
+@keyframes ev-c { 0%,100%{transform:scaleY(0.75)} 50%{transform:scaleY(0.22)} }
+@keyframes ev-d { 0%,100%{transform:scaleY(1)}    50%{transform:scaleY(0.38)} }
+@keyframes ev-e { 0%,100%{transform:scaleY(0.6)}  50%{transform:scaleY(0.95)} }
+@keyframes ev-f { 0%,100%{transform:scaleY(0.28)} 50%{transform:scaleY(0.72)} }
+@keyframes ev-g { 0%,100%{transform:scaleY(0.18)} 50%{transform:scaleY(0.48)} }
+.eb1 { animation: ev-c 0.90s ease-in-out infinite; }
+.eb2 { animation: ev-e 1.10s ease-in-out 0.14s infinite; }
+.eb3 { animation: ev-b 0.85s ease-in-out 0.28s infinite; }
+.eb4 { animation: ev-d 1.00s ease-in-out 0.07s infinite; }
+.eb5 { animation: ev-a 0.95s ease-in-out 0.21s infinite; }
+.eb6 { animation: ev-f 1.15s ease-in-out 0.35s infinite; }
+.eb7 { animation: ev-g 0.88s ease-in-out 0.42s infinite; }
+.eva-ring {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: eva-ring-pulse 3s ease-out infinite;
+}
+.eva-ring.r2 { animation-delay: 1.5s; }
+@keyframes eva-ring-pulse {
+  0%   { transform: scale(1);    opacity: 0.4; }
+  100% { transform: scale(1.22); opacity: 0; }
+}
+
 /* ========== COMPARISON TABLE ========== */
 .comp-split {
   display: grid;
-  grid-template-columns: 1fr 24px 1fr;
+  grid-template-columns: 1fr 20px 1fr;
   gap: 0;
-  margin-top: 10px;
-  height: calc(100% - 60px);
+  margin-top: 8px;
 }
-
-.comp-col {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.comp-col-old { padding-right: 14px; }
-.comp-col-new { padding-left: 14px; }
-
+.comp-col { display: flex; flex-direction: column; gap: 6px; }
+.comp-col-old { padding-right: 12px; }
+.comp-col-new { padding-left: 12px; }
 .comp-col-head {
-  font-size: 0.78em;
+  font-size: 0.72em;
   font-weight: 800;
   text-align: center;
-  padding: 10px 0 14px;
+  padding-bottom: 10px;
   letter-spacing: -0.01em;
 }
-
 .comp-old-item {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 8px;
-  padding: 9px 14px;
-  font-size: 0.5em;
+  padding: 7px 12px;
+  font-size: 0.46em;
   color: var(--dim);
   line-height: 1.4;
 }
-
 .comp-new-item {
   background: rgba(139,92,246,0.10);
-  border: 1px solid rgba(139,92,246,0.20);
+  border: 1px solid rgba(139,92,246,0.22);
   border-radius: 8px;
-  padding: 9px 14px;
-  font-size: 0.5em;
+  padding: 7px 12px;
+  font-size: 0.46em;
   color: #fff;
   line-height: 1.4;
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 7px;
 }
-
-.comp-new-item .ck {
-  color: var(--v400);
-  font-weight: 900;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.comp-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.comp-divider-line {
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, rgba(139,92,246,0.4), transparent);
-}
-
-/* Stagger comp items */
+.comp-new-item .ck { color: var(--v400); font-weight: 900; flex-shrink: 0; }
+.comp-divider { display: flex; align-items: center; justify-content: center; }
+.comp-divider-line { width: 1px; height: 100%; background: linear-gradient(to bottom, transparent, rgba(139,92,246,0.4), transparent); }
 .reveal .slides section.present .comp-old-item,
-.reveal .slides section.present .comp-new-item {
-  animation: scale-in 0.4s ease both;
-}
+.reveal .slides section.present .comp-new-item { animation: scale-in 0.4s ease both; }
 .reveal .slides section.present .comp-old-item:nth-child(2),
 .reveal .slides section.present .comp-new-item:nth-child(2) { animation-delay: 0.08s; }
 .reveal .slides section.present .comp-old-item:nth-child(3),
@@ -1003,20 +962,10 @@
 <body>
   <div class="reveal">
 
-    <!-- Persistent branding footer — visible on every slide -->
-    <div style="
-      position: fixed;
-      bottom: 12px;
-      left: 0; right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 28px;
-      z-index: 200;
-      pointer-events: none;
-    ">
-      <div style="display:flex; align-items:center; gap:8px;">
-        <svg viewBox="0 0 28 28" width="20" height="20" style="flex-shrink:0;">
+    <!-- Persistent branding footer — every slide -->
+    <div style="position:fixed;bottom:12px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:0 28px;z-index:200;pointer-events:none;">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <svg viewBox="0 0 28 28" width="18" height="18" style="flex-shrink:0;">
           <rect x="1" y="1" width="26" height="26" rx="6" fill="rgba(30,27,75,0.9)" stroke="rgba(139,92,246,0.5)" stroke-width="1.2"/>
           <rect x="3.5" y="8"  width="3" height="12" rx="1.5" fill="#a78bfa" style="transform-box:fill-box;transform-origin:50% 50%;animation:ev-b 1.10s ease-in-out 0.14s infinite;"/>
           <rect x="8"   y="8"  width="3" height="12" rx="1.5" fill="#a78bfa" style="transform-box:fill-box;transform-origin:50% 50%;animation:ev-d 1.00s ease-in-out 0.07s infinite;"/>
@@ -1024,11 +973,9 @@
           <rect x="17"  y="8"  width="3" height="12" rx="1.5" fill="#a78bfa" style="transform-box:fill-box;transform-origin:50% 50%;animation:ev-c 0.95s ease-in-out 0.21s infinite;"/>
           <rect x="21.5" y="8" width="3" height="12" rx="1.5" fill="#a78bfa" style="transform-box:fill-box;transform-origin:50% 50%;animation:ev-f 1.15s ease-in-out 0.35s infinite;"/>
         </svg>
-        <span style="font-size:12px; font-weight:800; background:linear-gradient(135deg,#a78bfa,#c4b5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; letter-spacing:0.04em;">evaVoc</span>
+        <span style="font-size:12px;font-weight:800;background:linear-gradient(135deg,#a78bfa,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:0.04em;">evaVoc</span>
       </div>
-      <div style="font-size:10px; color:rgba(255,255,255,0.30); letter-spacing:0.10em; text-transform:uppercase; font-weight:500;">
-        par <span style="color:rgba(167,139,250,0.55); font-weight:700;">NouraiSolutions</span>
-      </div>
+      <div style="font-size:10px;color:rgba(255,255,255,0.30);letter-spacing:0.10em;text-transform:uppercase;font-weight:500;">par <span style="color:rgba(167,139,250,0.55);font-weight:700;">NouraiSolutions</span></div>
     </div>
 
     <div class="slides">
@@ -1038,8 +985,8 @@
   <div style="position:relative; z-index:1;">
     <div class="tag">Intelligence Qualite pour Centres d'Appels</div>
     <!-- EVAVOC LOGO -->
-    <div style="margin: 0 auto 20px; width:116px; height:116px;">
-      <svg viewBox="0 0 116 116" width="116" height="116">
+    <div style="margin: 0 auto 18px; width:110px; height:110px;">
+      <svg viewBox="0 0 110 110" width="110" height="110">
         <defs>
           <linearGradient id="evaBg" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stop-color="#1e1b4b"/>
@@ -1058,30 +1005,24 @@
             </feMerge>
           </filter>
         </defs>
-
-        <!-- Background rounded square -->
-        <rect x="3" y="3" width="110" height="110" rx="22" fill="url(#evaBg)" stroke="rgba(139,92,246,0.45)" stroke-width="1.5"/>
-
-        <!-- Pulsing border rings -->
-        <rect x="3" y="3" width="110" height="110" rx="22" fill="none" stroke="rgba(139,92,246,0.25)" stroke-width="1.5" class="eva-ring"/>
-        <rect x="3" y="3" width="110" height="110" rx="22" fill="none" stroke="rgba(167,139,250,0.12)" stroke-width="3"  class="eva-ring r2"/>
-
-        <!-- 7 waveform bars centred at y=58, height=62 (y=27 to y=89) -->
-        <rect class="eva-bar eb1" x="14" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
-        <rect class="eva-bar eb2" x="27" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb3" x="40" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb4" x="53" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb5" x="66" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb6" x="79" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
-        <rect class="eva-bar eb7" x="92" y="27" width="9" height="62" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="url(#evaBg)" stroke="rgba(139,92,246,0.45)" stroke-width="1.5"/>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(139,92,246,0.25)" stroke-width="1.5" class="eva-ring"/>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(167,139,250,0.12)" stroke-width="3"  class="eva-ring r2"/>
+        <rect class="eva-bar eb1" x="12" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
+        <rect class="eva-bar eb2" x="25" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb3" x="38" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb4" x="51" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb5" x="64" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb6" x="77" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb7" x="90" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
       </svg>
     </div>
     <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">evaVoc</span></h1>
     <p class="sub">Chaque appel evalue. Chaque insight livre.</p>
-    <div class="brand-sm">par Nourai Solutions</div>
+    <div class="brand-sm">par NouraiSolutions</div>
   </div>
   <aside class="notes">
-    "Bonjour. Je suis [Nom], Nourai Solutions."
+    "Bonjour. Je suis [Nom], NouraiSolutions."
   </aside>
 </section>
 
@@ -1424,11 +1365,11 @@
 </section>
 
       <!-- 09b-compare.html -->
-<section style="padding: 24px 36px;">
+<section style="padding: 20px 28px;">
   <div class="tag">L'ancien monde vs evaVoc</div>
   <div class="comp-split">
     <div class="comp-col comp-col-old">
-      <div class="comp-col-head" style="color: var(--dim);">L'ancien monde</div>
+      <div class="comp-col-head" style="color:var(--dim);">L'ancien monde</div>
       <div class="comp-old-item">1 à 2 % des appels écoutés manuellement</div>
       <div class="comp-old-item">Évaluations chronophages et subjectives</div>
       <div class="comp-old-item">Reporting Excel, incomplet et peu exploitable</div>
@@ -1441,18 +1382,18 @@
       <div class="comp-divider-line"></div>
     </div>
     <div class="comp-col comp-col-new">
-      <div class="comp-col-head" style="color: var(--v400);"><span class="gr">evaVoc</span></div>
+      <div class="comp-col-head"><span class="gr">evaVoc</span></div>
       <div class="comp-new-item"><span class="ck">✓</span> 100 % des appels analysés automatiquement avec l'IA</div>
       <div class="comp-new-item"><span class="ck">✓</span> Scoring qualité objectif, homogène et en temps réel</div>
       <div class="comp-new-item"><span class="ck">✓</span> Dashboards dynamiques à partager avec vos clients</div>
       <div class="comp-new-item"><span class="ck">✓</span> Coaching de vos managers basé sur les appels réels</div>
-      <div class="comp-new-item"><span class="ck">✓</span> Enseignements structurés sur les flux confiés par chaque client</div>
+      <div class="comp-new-item"><span class="ck">✓</span> Enseignements structurés sur les flux de chaque client</div>
       <div class="comp-new-item"><span class="ck">✓</span> Positionnement différenciant avec une offre IA intégrée</div>
       <div class="comp-new-item"><span class="ck">✓</span> Image d'un partenaire stratégique et innovant</div>
     </div>
   </div>
   <aside class="notes">
-    "Voici la différence concrète. À gauche, le statu quo. À droite, ce que vous gagnez."
+    "Voici la différence concrète. À gauche, le statu quo. À droite, ce que vous gagnez avec evaVoc."
   </aside>
 </section>
 
@@ -1573,11 +1514,11 @@
     </tbody>
   </table>
   <aside class="notes">
-    "5-8 euros en manuel, 25-35 centimes avec evaVoc.
-    Sur 10 000 appels/mois, presque 50 000 euros/an."
+    "Temps reduit de 20 minutes a 2 minutes. Couverture passee de 3% a 100%."
   </aside>
 </section>
 
+      <!-- 13-pricing.html -->
 
       <!-- 14-differentiators.html -->
 <section class="cx">
@@ -1644,11 +1585,11 @@
       backgroundTransition: 'fade',
       transitionSpeed: 'default',
       fragments: true,
-      width: 1100,
-      height: 700,
-      margin: 0.08,
-      minScale: 0.2,
-      maxScale: 1.5,
+      width: 960,
+      height: 600,
+      margin: 0.1,
+      minScale: 0.5,
+      maxScale: 1.2,
       plugins: [RevealNotes]
     });
   </script>
