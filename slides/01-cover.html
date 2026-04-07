@@ -1,50 +1,44 @@
 <section class="cx" style="position:relative;">
   <div style="position:relative; z-index:1;">
     <div class="tag">Intelligence Qualite pour Centres d'Appels</div>
-    <!-- BRAIN LOGO -->
-    <div style="margin: 0 auto 12px; width:70px; height:70px;">
-      <svg viewBox="0 0 120 120" width="70" height="70">
-        <!-- Brain shape -->
-        <g stroke="#a78bfa" fill="none" stroke-width="1.5" opacity="0.9">
-          <!-- Left hemisphere -->
-          <path d="M60 20 C40 20, 25 30, 25 50 C25 55, 28 60, 22 65 C18 68, 20 78, 28 80 C24 85, 28 95, 38 95 C42 100, 55 100, 60 95" class="brain-draw"/>
-          <!-- Right hemisphere -->
-          <path d="M60 20 C80 20, 95 30, 95 50 C95 55, 92 60, 98 65 C102 68, 100 78, 92 80 C96 85, 92 95, 82 95 C78 100, 65 100, 60 95" class="brain-draw"/>
-          <!-- Neural connections inside -->
-          <circle cx="42" cy="45" r="3" class="neuron n1"/>
-          <circle cx="55" cy="35" r="2.5" class="neuron n2"/>
-          <circle cx="70" cy="42" r="3" class="neuron n3"/>
-          <circle cx="48" cy="60" r="2.5" class="neuron n4"/>
-          <circle cx="65" cy="55" r="2" class="neuron n5"/>
-          <circle cx="78" cy="58" r="2.5" class="neuron n6"/>
-          <circle cx="38" cy="75" r="2" class="neuron n7"/>
-          <circle cx="55" cy="72" r="3" class="neuron n8"/>
-          <circle cx="72" cy="70" r="2.5" class="neuron n9"/>
-          <circle cx="60" cy="88" r="2" class="neuron n10"/>
-          <!-- Synapses -->
-          <line x1="42" y1="45" x2="55" y2="35" class="synapse s1"/>
-          <line x1="55" y1="35" x2="70" y2="42" class="synapse s2"/>
-          <line x1="42" y1="45" x2="48" y2="60" class="synapse s3"/>
-          <line x1="70" y1="42" x2="65" y2="55" class="synapse s4"/>
-          <line x1="65" y1="55" x2="78" y2="58" class="synapse s5"/>
-          <line x1="48" y1="60" x2="55" y2="72" class="synapse s6"/>
-          <line x1="65" y1="55" x2="55" y2="72" class="synapse s7"/>
-          <line x1="55" y1="72" x2="72" y2="70" class="synapse s8"/>
-          <line x1="38" y1="75" x2="55" y2="72" class="synapse s9"/>
-          <line x1="55" y1="72" x2="60" y2="88" class="synapse s10"/>
-          <line x1="72" y1="70" x2="78" y2="58" class="synapse s11"/>
-          <line x1="48" y1="60" x2="38" y2="75" class="synapse s12"/>
-        </g>
-        <!-- QA pulse ring -->
-        <circle cx="60" cy="60" r="55" stroke="#7c3aed" stroke-width="0.5" fill="none" opacity="0.3" class="pulse-ring"/>
-        <circle cx="60" cy="60" r="55" stroke="#7c3aed" stroke-width="0.5" fill="none" opacity="0.15" class="pulse-ring r2"/>
+    <!-- EVAVOC LOGO -->
+    <div style="margin: 0 auto 18px; width:110px; height:110px;">
+      <svg viewBox="0 0 110 110" width="110" height="110">
+        <defs>
+          <linearGradient id="evaBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1e1b4b"/>
+            <stop offset="100%" stop-color="#0d0b22"/>
+          </linearGradient>
+          <linearGradient id="evaBarGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#c4b5fd"/>
+            <stop offset="60%" stop-color="#8b5cf6"/>
+            <stop offset="100%" stop-color="#6d28d9"/>
+          </linearGradient>
+          <filter id="evaGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="url(#evaBg)" stroke="rgba(139,92,246,0.45)" stroke-width="1.5"/>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(139,92,246,0.25)" stroke-width="1.5" class="eva-ring"/>
+        <rect x="3" y="3" width="104" height="104" rx="20" fill="none" stroke="rgba(167,139,250,0.12)" stroke-width="3"  class="eva-ring r2"/>
+        <rect class="eva-bar eb1" x="12" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
+        <rect class="eva-bar eb2" x="25" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb3" x="38" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb4" x="51" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb5" x="64" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb6" x="77" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)"/>
+        <rect class="eva-bar eb7" x="90" y="25" width="9" height="60" rx="4.5" fill="url(#evaBarGrad)" filter="url(#evaGlow)" opacity="0.85"/>
       </svg>
     </div>
-    <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">BrainQA</span></h1>
+    <h1 style="margin-bottom: 8px;" class="brand-name"><span class="gr">evaVoc</span></h1>
     <p class="sub">Chaque appel evalue. Chaque insight livre.</p>
-    <div class="brand-sm">par Nourai Solutions</div>
+    <div class="brand-sm">par NouraiSolutions</div>
   </div>
   <aside class="notes">
-    "Bonjour. Je suis [Nom], Nourai Solutions."
+    "Bonjour. Je suis [Nom], NouraiSolutions."
   </aside>
 </section>
