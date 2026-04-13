@@ -36,7 +36,7 @@
 
 .reveal .slides section {
   text-align: left;
-  padding: 24px 32px;
+  padding: 28px 40px;
   background: transparent;
   box-sizing: border-box;
   font-size: 20px;
@@ -50,9 +50,9 @@
   line-height: 1.15;
 }
 
-.reveal h1 { font-size: 1.8em; }
-.reveal h2 { font-size: 1.35em; }
-.reveal h3 { font-size: 0.85em; color: var(--v400); font-weight: 600; }
+.reveal h1 { font-size: 2.0em; }
+.reveal h2 { font-size: 1.5em; margin-bottom: 8px; }
+.reveal h3 { font-size: 0.95em; color: var(--v400); font-weight: 600; }
 
 .cx { text-align: center !important; }
 
@@ -63,7 +63,7 @@
 .em { color: var(--emerald); }
 
 .gr {
-  background: linear-gradient(135deg, var(--v500), var(--v300));
+  background: linear-gradient(135deg, var(--v500), #e0d2fe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -72,20 +72,20 @@
 /* ========== COMPONENTS ========== */
 .tag {
   display: inline-block;
-  font-size: 0.52em;
+  font-size: 0.56em;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--v400);
   border: 1px solid rgba(167, 139, 250, 0.25);
-  padding: 4px 14px;
+  padding: 5px 16px;
   margin-bottom: 16px;
 }
 
 .sub {
-  font-size: 0.65em;
+  font-size: 0.70em;
   color: rgba(255,255,255,0.80);
-  line-height: 1.5;
+  line-height: 1.6;
   font-weight: 400;
 }
 .cx .sub { margin: 0 auto; }
@@ -172,7 +172,7 @@
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 12px 16px;
+  padding: 14px 18px;
   margin: 5px 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -184,8 +184,8 @@
 
 .card-accent { border-left: 3px solid var(--v500); }
 
-.card-title { font-size: 0.72em; font-weight: 700; color: #fff; margin-bottom: 2px; }
-.card-desc { font-size: 0.58em; color: rgba(255,255,255,0.75); line-height: 1.4; }
+.card-title { font-size: 0.76em; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.card-desc { font-size: 0.62em; color: rgba(255,255,255,0.75); line-height: 1.4; }
 
 /* ========== GRIDS ========== */
 .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
@@ -196,7 +196,7 @@
 .metric {
   background: var(--v950);
   border: 1px solid rgba(139, 92, 246, 0.2);
-  padding: 14px 10px;
+  padding: 16px 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -213,7 +213,7 @@
   line-height: 1.1;
 }
 
-.metric .lbl { font-size: 0.52em; color: var(--dim); margin-top: 3px; font-weight: 500; }
+.metric .lbl { font-size: 0.56em; color: var(--dim); margin-top: 3px; font-weight: 500; }
 
 /* ========== 3D WORKFLOW — THE SHOWSTOPPER ========== */
 .wf-universe {
@@ -403,8 +403,8 @@
   text-transform: uppercase;
 }
 
-.wf-node .wf-name { font-size: 0.56em; font-weight: 700; color: #fff; margin-top: 1px; }
-.wf-node .wf-detail { font-size: 0.42em; color: var(--dim2); margin-top: 1px; line-height: 1.2; }
+.wf-node .wf-name { font-size: 0.60em; font-weight: 700; color: #fff; margin-top: 1px; }
+.wf-node .wf-detail { font-size: 0.46em; color: var(--dim2); margin-top: 1px; line-height: 1.2; }
 
 .wf-status {
   display: inline-block;
@@ -443,20 +443,20 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 12px;
-  font-size: 0.64em;
+  font-size: 0.68em;
 }
 
 .tbl th {
   background: var(--v950);
   border-bottom: 2px solid var(--v500);
-  padding: 7px 10px;
+  padding: 8px 12px;
   text-align: left;
   font-weight: 700;
   color: var(--v400);
 }
 
 .tbl td {
-  padding: 6px 10px;
+  padding: 8px 12px;
   border-bottom: 1px solid var(--border);
   color: var(--text);
 }
@@ -571,10 +571,10 @@
   box-shadow: 0 12px 30px rgba(139,92,246,0.12);
 }
 
-.uc-title { font-size: 0.62em; font-weight: 700; color: #fff; margin-bottom: 5px; }
-.uc-desc { font-size: 0.52em; color: var(--dim); line-height: 1.4; margin-bottom: 8px; }
+.uc-title { font-size: 0.68em; font-weight: 700; color: #fff; margin-bottom: 5px; }
+.uc-desc { font-size: 0.56em; color: var(--dim); line-height: 1.4; margin-bottom: 8px; }
 .uc-num { font-size: 1.1em; font-weight: 900; color: #fff; }
-.uc-num-lbl { font-size: 0.46em; color: var(--dim2); }
+.uc-num-lbl { font-size: 0.50em; color: var(--dim2); }
 
 /* ========== CTA ========== */
 .cta-block {
@@ -586,10 +586,10 @@
   animation: glow-breathe 3s ease-in-out infinite;
 }
 
-.cta-main { font-size: 0.75em; font-weight: 700; color: #fff; }
+.cta-main { font-size: 0.80em; font-weight: 700; color: #fff; }
 
 .cta-big {
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: 900;
   background: linear-gradient(90deg, var(--v400), var(--v300), var(--v400));
   background-size: 200% auto;
@@ -633,7 +633,7 @@
 .diff-card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 20px;
+  padding: 24px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -664,14 +664,14 @@
   stroke-linejoin: round;
 }
 
-.diff-title { font-size: 0.64em; font-weight: 700; color: #fff; margin-bottom: 4px; }
-.diff-desc { font-size: 0.52em; color: var(--dim); line-height: 1.4; }
+.diff-title { font-size: 0.70em; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.diff-desc { font-size: 0.56em; color: var(--dim); line-height: 1.4; }
 
 /* ========== SECURITY ========== */
 .sec-card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 10px;
+  padding: 14px;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -680,8 +680,8 @@
   border-color: rgba(139,92,246,0.3);
 }
 
-.sec-title { font-size: 0.62em; font-weight: 700; color: #fff; margin-bottom: 2px; }
-.sec-desc { font-size: 0.5em; color: var(--dim); line-height: 1.3; }
+.sec-title { font-size: 0.66em; font-weight: 700; color: #fff; margin-bottom: 2px; }
+.sec-desc { font-size: 0.54em; color: var(--dim); line-height: 1.3; }
 
 /* ========== DEMO ========== */
 .demo-block {
@@ -953,6 +953,41 @@
 .reveal .slides section.present .comp-old-item:nth-child(7),
 .reveal .slides section.present .comp-new-item:nth-child(7) { animation-delay: 0.48s; }
 
+/* ========== CAPABILITY GRID ========== */
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+.cap-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 12px 8px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.cap-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(139,92,246,0.35);
+}
+.cap-ico { font-size: 1.3em; margin-bottom: 4px; }
+.cap-name { font-size: 0.54em; font-weight: 700; color: #fff; line-height: 1.2; }
+.cap-desc { font-size: 0.42em; color: var(--dim2); line-height: 1.3; margin-top: 3px; }
+
+.reveal .slides section.present .cap-item {
+  animation: scale-in 0.4s ease both;
+}
+.reveal .slides section.present .cap-item:nth-child(2) { animation-delay: 0.06s; }
+.reveal .slides section.present .cap-item:nth-child(3) { animation-delay: 0.12s; }
+.reveal .slides section.present .cap-item:nth-child(4) { animation-delay: 0.18s; }
+.reveal .slides section.present .cap-item:nth-child(5) { animation-delay: 0.24s; }
+.reveal .slides section.present .cap-item:nth-child(6) { animation-delay: 0.30s; }
+.reveal .slides section.present .cap-item:nth-child(7) { animation-delay: 0.36s; }
+.reveal .slides section.present .cap-item:nth-child(8) { animation-delay: 0.42s; }
+.reveal .slides section.present .cap-item:nth-child(9) { animation-delay: 0.48s; }
+.reveal .slides section.present .cap-item:nth-child(10) { animation-delay: 0.54s; }
+
 /* ========== OVERRIDES ========== */
 .reveal .slide-number { display: none !important; }
 .reveal .progress span { background: var(--v500); }
@@ -1021,7 +1056,83 @@
   </aside>
 </section>
 
-      <!-- 01a-oldvsnew.html -->
+      <!-- 01b-company.html -->
+<section>
+  <!-- Header -->
+  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+    <div>
+      <div class="tag" style="margin-bottom:6px;">Qui sommes-nous</div>
+      <h2 style="margin:0;"><span class="gr">NourAI Solutions</span></h2>
+      <p style="font-size:0.55em; color:var(--dim2); margin:4px 0 0; line-height:1.4;">
+        Cabinet tunisien &middot; IA &amp; automatisation &middot; Logiciels sur mesure
+      </p>
+    </div>
+    <div style="text-align:right;">
+      <div style="font-size:0.48em; color:var(--v400); font-weight:600;">contact@nouraisolutions.tn</div>
+      <div style="font-size:0.44em; color:var(--dim2); margin-top:2px;">nouraisolutions.com</div>
+    </div>
+  </div>
+
+  <!-- Team — photos + names -->
+  <div class="g3" style="gap:16px;">
+
+    <!-- Nour — CEO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.25); border-top:3px solid var(--v500); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:100px;height:100px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#ec4899,#7c3aed);padding:4px;">
+        <img src="team/nour.jpg" alt="Nour Sanhaji" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
+      </div>
+      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Nour Sanhaji</div>
+      <div style="display:inline-block;font-size:0.50em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">CEO &amp; Fondatrice</div>
+      <div style="font-size:0.56em;color:var(--dim2);line-height:1.5;">Vision &middot; Strategie<br>Business Development</div>
+    </div>
+
+    <!-- Rami — COO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.18); border-top:3px solid var(--v400); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:100px;height:100px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#10b981);padding:4px;">
+        <img src="team/rami.jpg" alt="Rami Ben Sassi" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
+      </div>
+      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Rami Ben Sassi</div>
+      <div style="display:inline-block;font-size:0.50em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">COO &amp; Co-fondateur</div>
+      <div style="font-size:0.56em;color:var(--dim2);line-height:1.5;">Conseil IA &middot; Gestion ops<br>Administration &amp; Finance</div>
+    </div>
+
+    <!-- Taher — CTO -->
+    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.18); border-top:3px solid var(--v300); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+      <div style="width:100px;height:100px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#3b82f6);padding:4px;">
+        <img src="team/taher.jpg" alt="Taher Ben Sassi" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
+      </div>
+      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Taher Ben Sassi</div>
+      <div style="display:inline-block;font-size:0.50em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">CTO &amp; Co-fondateur</div>
+      <div style="font-size:0.56em;color:var(--dim2);line-height:1.5;">Architecture &middot; IA<br>Developpement Full-Stack</div>
+    </div>
+
+  </div>
+
+  <!-- Bottom strip -->
+  <div style="margin-top:14px;border-top:1px solid rgba(139,92,246,0.12);padding-top:10px;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:6px;">
+    <div style="text-align:center;">
+      <div style="font-size:0.48em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Specialite</div>
+      <div style="font-size:0.60em;font-weight:700;color:#fff;margin-top:2px;">IA &amp; Automatisation</div>
+    </div>
+    <div style="width:1px;height:26px;background:rgba(255,255,255,0.07);"></div>
+    <div style="text-align:center;">
+      <div style="font-size:0.48em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Secteur cible</div>
+      <div style="font-size:0.60em;font-weight:700;color:#fff;margin-top:2px;">Centres d'appels &middot; BPO</div>
+    </div>
+    <div style="width:1px;height:26px;background:rgba(255,255,255,0.07);"></div>
+    <div style="text-align:center;">
+      <div style="font-size:0.48em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Produit phare</div>
+      <div style="font-size:0.60em;font-weight:700;margin-top:2px;"><span class="gr">evaVoc</span></div>
+    </div>
+  </div>
+
+  <aside class="notes">
+    "NourAI Solutions — trois co-fondateurs tunisiens.
+    Nour, notre CEO, porte la vision. Rami dirige les operations. Taher l'architecture technique et l'IA."
+  </aside>
+</section>
+
+      <!-- 01c-oldvsnew.html -->
 <section style="padding: 20px 28px;">
   <div class="tag">L'ancien monde vs evaVoc</div>
   <h2 style="margin:0 0 4px;"><span class="gr">Pourquoi changer ?</span></h2>
@@ -1054,82 +1165,6 @@
   <aside class="notes">
     "Voici la difference concrete. A gauche, le statu quo. A droite, ce que vous gagnez avec evaVoc.
     On passe de 2% d'appels ecoutes a 100% analyses automatiquement."
-  </aside>
-</section>
-
-      <!-- 01b-company.html -->
-<section>
-  <!-- Header -->
-  <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
-    <div>
-      <div class="tag" style="margin-bottom:6px;">Qui sommes-nous</div>
-      <h2 style="margin:0;"><span class="gr">NourAI Solutions</span></h2>
-      <p style="font-size:0.55em; color:var(--dim2); margin:4px 0 0; line-height:1.4;">
-        Cabinet tunisien &middot; IA &amp; automatisation &middot; Logiciels sur mesure
-      </p>
-    </div>
-    <div style="text-align:right;">
-      <div style="font-size:0.48em; color:var(--v400); font-weight:600;">contact@nouraisolutions.tn</div>
-      <div style="font-size:0.44em; color:var(--dim2); margin-top:2px;">nouraisolutions.com</div>
-    </div>
-  </div>
-
-  <!-- Team — photos + names -->
-  <div class="g3" style="gap:16px;">
-
-    <!-- Nour — CEO -->
-    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.25); border-top:3px solid var(--v500); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div style="width:90px;height:90px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#ec4899,#7c3aed);padding:3px;">
-        <img src="team/nour.jpg" alt="Nour Sanhaji" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Nour Sanhaji</div>
-      <div style="display:inline-block;font-size:0.46em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">CEO &amp; Fondatrice</div>
-      <div style="font-size:0.5em;color:var(--dim2);line-height:1.5;">Vision &middot; Strategie<br>Business Development</div>
-    </div>
-
-    <!-- Rami — COO -->
-    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.18); border-top:3px solid var(--v400); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div style="width:90px;height:90px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#10b981);padding:3px;">
-        <img src="team/rami.jpg" alt="Rami Ben Sassi" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Rami Ben Sassi</div>
-      <div style="display:inline-block;font-size:0.46em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">COO &amp; Co-fondateur</div>
-      <div style="font-size:0.5em;color:var(--dim2);line-height:1.5;">Conseil IA &middot; Gestion ops<br>Administration &amp; Finance</div>
-    </div>
-
-    <!-- Taher — CTO -->
-    <div style="background:var(--card); border:1px solid rgba(139,92,246,0.18); border-top:3px solid var(--v300); padding:20px 16px; text-align:center; transition:transform 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(139,92,246,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div style="width:90px;height:90px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#3b82f6);padding:3px;">
-        <img src="team/taher.jpg" alt="Taher Ben Sassi" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;">
-      </div>
-      <div style="font-size:0.9em;font-weight:900;color:#fff;margin-bottom:4px;">Taher Ben Sassi</div>
-      <div style="display:inline-block;font-size:0.46em;font-weight:800;letter-spacing:0.1em;color:var(--v400);border:1px solid rgba(139,92,246,0.35);padding:3px 14px;margin-bottom:8px;text-transform:uppercase;">CTO &amp; Co-fondateur</div>
-      <div style="font-size:0.5em;color:var(--dim2);line-height:1.5;">Architecture &middot; IA<br>Developpement Full-Stack</div>
-    </div>
-
-  </div>
-
-  <!-- Bottom strip -->
-  <div style="margin-top:14px;border-top:1px solid rgba(139,92,246,0.12);padding-top:10px;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:6px;">
-    <div style="text-align:center;">
-      <div style="font-size:0.44em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Specialite</div>
-      <div style="font-size:0.56em;font-weight:700;color:#fff;margin-top:2px;">IA &amp; Automatisation</div>
-    </div>
-    <div style="width:1px;height:26px;background:rgba(255,255,255,0.07);"></div>
-    <div style="text-align:center;">
-      <div style="font-size:0.44em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Secteur cible</div>
-      <div style="font-size:0.56em;font-weight:700;color:#fff;margin-top:2px;">Centres d'appels &middot; BPO</div>
-    </div>
-    <div style="width:1px;height:26px;background:rgba(255,255,255,0.07);"></div>
-    <div style="text-align:center;">
-      <div style="font-size:0.44em;color:var(--dim2);text-transform:uppercase;letter-spacing:0.08em;">Produit phare</div>
-      <div style="font-size:0.56em;font-weight:700;margin-top:2px;"><span class="gr">evaVoc</span></div>
-    </div>
-  </div>
-
-  <aside class="notes">
-    "NourAI Solutions — trois co-fondateurs tunisiens.
-    Nour, notre CEO, porte la vision. Rami dirige les operations. Taher l'architecture technique et l'IA."
   </aside>
 </section>
 
@@ -1346,7 +1381,7 @@
 </section>
 
       <!-- 06b-claude.html -->
-<section style="padding:20px 28px;">
+<section style="padding:24px 36px;">
   <div class="tag">Intelligence Artificielle</div>
   <h2 style="margin:0 0 12px;">Propulse par <span class="gr">Claude (Anthropic)</span></h2>
 
@@ -1359,27 +1394,27 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 10a4 4 0 0 0 4 4h0a4 4 0 0 0 0-8h0a4 4 0 0 0-4 4z"/><path d="M8 10a4 4 0 0 1-4 4h0a4 4 0 0 1 0-8h0a4 4 0 0 1 4 4z"/><path d="M12 14a4 4 0 0 0-4 4v2a4 4 0 0 0 8 0v-2a4 4 0 0 0-4-4z"/></svg>
         </div>
         <div>
-          <div style="font-size:0.72em;font-weight:800;color:#fff;">Le meilleur modele du marche</div>
-          <div style="font-size:0.5em;color:var(--dim2);">Claude d'Anthropic — precision inegalee</div>
+          <div style="font-size:0.76em;font-weight:800;color:#fff;">Le meilleur modele du marche</div>
+          <div style="font-size:0.58em;color:var(--v400);font-weight:600;">Claude d'Anthropic — precision inegalee</div>
         </div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:8px;">
         <div style="display:flex;align-items:center;gap:8px;">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald);flex-shrink:0;"></div>
-          <span style="font-size:0.56em;color:var(--dim);">Comprehension contextuelle avancee du langage</span>
+          <span style="font-size:0.60em;color:var(--dim);">Comprehension contextuelle avancee du langage</span>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald);flex-shrink:0;"></div>
-          <span style="font-size:0.56em;color:var(--dim);">Analyse multi-criteres en temps reel</span>
+          <span style="font-size:0.60em;color:var(--dim);">Analyse multi-criteres en temps reel</span>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald);flex-shrink:0;"></div>
-          <span style="font-size:0.56em;color:var(--dim);">Scoring objectif et reproductible</span>
+          <span style="font-size:0.60em;color:var(--dim);">Scoring objectif et reproductible</span>
         </div>
         <div style="display:flex;align-items:center;gap:8px;">
           <div style="width:8px;height:8px;border-radius:50%;background:var(--emerald);flex-shrink:0;"></div>
-          <span style="font-size:0.56em;color:var(--dim);">Conforme RGPD — donnees securisees</span>
+          <span style="font-size:0.60em;color:var(--dim);">Conforme RGPD — aucune retention des donnees</span>
         </div>
       </div>
     </div>
@@ -1391,8 +1426,8 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14"/></svg>
         </div>
         <div>
-          <div style="font-size:0.72em;font-weight:800;color:#fff;">Boucle d'apprentissage</div>
-          <div style="font-size:0.5em;color:var(--dim2);">L'IA s'ameliore a chaque evaluation</div>
+          <div style="font-size:0.76em;font-weight:800;color:#fff;">Boucle d'apprentissage</div>
+          <div style="font-size:0.58em;color:var(--emerald);font-weight:600;">L'IA s'ameliore a chaque evaluation</div>
         </div>
       </div>
 
@@ -1400,17 +1435,22 @@
       <div style="display:flex;flex-direction:column;gap:6px;">
         <div style="display:flex;align-items:center;gap:10px;">
           <div style="width:28px;height:28px;border-radius:50%;background:rgba(139,92,246,0.15);border:1px solid var(--v500);display:flex;align-items:center;justify-content:center;font-size:0.5em;font-weight:900;color:var(--v400);flex-shrink:0;">1</div>
-          <span style="font-size:0.56em;color:#fff;font-weight:600;">L'appel est transcrit et analyse par l'IA</span>
+          <span style="font-size:0.60em;color:#fff;font-weight:600;">L'appel est transcrit et analyse par Claude</span>
         </div>
-        <div style="width:1px;height:6px;background:rgba(139,92,246,0.3);margin-left:14px;"></div>
+        <div style="width:1px;height:5px;background:rgba(139,92,246,0.3);margin-left:14px;"></div>
         <div style="display:flex;align-items:center;gap:10px;">
           <div style="width:28px;height:28px;border-radius:50%;background:rgba(139,92,246,0.15);border:1px solid var(--v500);display:flex;align-items:center;justify-content:center;font-size:0.5em;font-weight:900;color:var(--v400);flex-shrink:0;">2</div>
-          <span style="font-size:0.56em;color:#fff;font-weight:600;">Le manager valide et commente le scoring</span>
+          <span style="font-size:0.60em;color:#fff;font-weight:600;">Le manager valide et ajuste le scoring</span>
         </div>
-        <div style="width:1px;height:6px;background:rgba(139,92,246,0.3);margin-left:14px;"></div>
+        <div style="width:1px;height:5px;background:rgba(139,92,246,0.3);margin-left:14px;"></div>
         <div style="display:flex;align-items:center;gap:10px;">
-          <div style="width:28px;height:28px;border-radius:50%;background:rgba(16,185,129,0.15);border:1px solid var(--emerald);display:flex;align-items:center;justify-content:center;font-size:0.5em;font-weight:900;color:var(--emerald);flex-shrink:0;">3</div>
-          <span style="font-size:0.56em;color:#fff;font-weight:600;">Les retours nourrissent l'IA — elle progresse</span>
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(139,92,246,0.15);border:1px solid var(--v500);display:flex;align-items:center;justify-content:center;font-size:0.5em;font-weight:900;color:var(--v400);flex-shrink:0;">3</div>
+          <span style="font-size:0.60em;color:#fff;font-weight:600;">Les retours enrichissent les prompts IA</span>
+        </div>
+        <div style="width:1px;height:5px;background:rgba(16,185,129,0.3);margin-left:14px;"></div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <div style="width:28px;height:28px;border-radius:50%;background:rgba(16,185,129,0.15);border:1px solid var(--emerald);display:flex;align-items:center;justify-content:center;font-size:0.5em;font-weight:900;color:var(--emerald);flex-shrink:0;">&#x21bb;</div>
+          <span style="font-size:0.60em;color:var(--emerald);font-weight:600;">L'IA devient plus precise — cercle vertueux</span>
         </div>
       </div>
     </div>
@@ -1418,61 +1458,137 @@
   </div>
 
   <!-- Bottom highlight -->
-  <div style="margin-top:14px;background:linear-gradient(135deg,rgba(139,92,246,0.08),rgba(16,185,129,0.08));border:1px solid rgba(139,92,246,0.2);padding:12px 20px;display:flex;align-items:center;gap:14px;">
+  <div style="margin-top:14px;background:linear-gradient(135deg,rgba(139,92,246,0.08),rgba(16,185,129,0.08));border:1px solid rgba(139,92,246,0.2);padding:14px 20px;display:flex;align-items:center;gap:14px;">
     <div style="font-size:1.3em;">&#9889;</div>
     <div>
-      <div style="font-size:0.62em;font-weight:700;color:#fff;">Ce n'est que le debut</div>
-      <div style="font-size:0.52em;color:var(--dim);">Chaque evaluation enrichit le modele. Plus vous utilisez evaVoc, plus il devient precis et pertinent pour votre activite.</div>
+      <div style="font-size:0.66em;font-weight:700;color:#fff;">Un avantage unique et cumulatif</div>
+      <div style="font-size:0.58em;color:var(--dim);">Claude analyse, vos managers valident, l'IA s'affine. Plus vous utilisez evaVoc, plus il s'adapte a votre contexte metier.</div>
     </div>
   </div>
 
   <aside class="notes">
     "Nous utilisons Claude d'Anthropic — le modele IA le plus precis du marche.
     Mais ce qui nous differencie vraiment, c'est notre boucle d'apprentissage : chaque evaluation validee par vos managers enrichit l'IA.
-    Plus vous utilisez evaVoc, plus il s'adapte a votre contexte metier."
+    C'est un cercle vertueux : plus vous utilisez evaVoc, plus il devient precis et pertinent pour votre activite."
+  </aside>
+</section>
+
+      <!-- 07-platform.html -->
+<section>
+  <div class="tag">Vue d'ensemble</div>
+  <h2 style="margin:0 0 4px;">Une plateforme, <span class="gr">10 capacites</span></h2>
+  <p style="font-size:0.62em;color:var(--dim);margin:0 0 6px;">Tout ce qu'il faut pour automatiser votre controle qualite de bout en bout.</p>
+
+  <div class="cap-grid">
+
+    <div class="cap-item">
+      <div class="cap-ico">&#9878;</div>
+      <div class="cap-name">Verdict Dynamique</div>
+      <div class="cap-desc">Verdicts auto-generes : compliance, score, normalisation</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#9638;</div>
+      <div class="cap-name">Grilles d'Evaluation</div>
+      <div class="cap-desc">Categorie &rarr; Question, ponderation configurable par client</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#128196;</div>
+      <div class="cap-name">Gestion Scripts</div>
+      <div class="cap-desc">Import scripts client, comparaison IA vs discours agent</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#128737;</div>
+      <div class="cap-name">Conformite Situationnelle</div>
+      <div class="cap-desc">Analyse contextuelle, pas de simple matching mots-cles</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#128462;</div>
+      <div class="cap-name">Import / Export Excel</div>
+      <div class="cap-desc">Grilles, scripts et rapports au format Excel natif</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#128202;</div>
+      <div class="cap-name">Generation Rapports</div>
+      <div class="cap-desc">Par evaluation, par agent, par campagne — PDF & Excel</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#10024;</div>
+      <div class="cap-name">Insights IA</div>
+      <div class="cap-desc">Tendances, anomalies, clustering appels, patterns agents</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#128200;</div>
+      <div class="cap-name">Dashboards Temps Reel</div>
+      <div class="cap-desc">KPIs en direct, classements agents, distributions scores</div>
+    </div>
+
+    <div class="cap-item">
+      <div class="cap-ico">&#127970;</div>
+      <div class="cap-name">Multi-client</div>
+      <div class="cap-desc">Donnees isolees, grilles et scripts specifiques par client</div>
+    </div>
+
+    <div class="cap-item" style="border-color:rgba(16,185,129,0.3);">
+      <div class="cap-ico">&#128257;</div>
+      <div class="cap-name" style="color:var(--emerald);">Boucle d'Apprentissage</div>
+      <div class="cap-desc">Validation manager &rarr; prompts affines &rarr; IA plus precise</div>
+    </div>
+
+  </div>
+
+  <aside class="notes">
+    "Voici les 10 piliers de la plateforme evaVoc. Chaque capacite est configurable par client.
+    Le dernier point est cle : notre boucle d'apprentissage signifie que le systeme s'ameliore avec chaque evaluation validee."
   </aside>
 </section>
 
       <!-- 08-features.html -->
 <section>
   <div class="tag">Fonctionnalites</div>
-  <h2>Tout ce dont votre equipe a besoin</h2>
+  <h2>La puissance sous le capot</h2>
   <div class="g3">
     <div class="card">
       <div class="ico-box"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 3v18"/></svg></div>
-      <div class="card-title">Grilles personnalisees</div>
-      <div class="card-desc">Importez vos cadres de notation. Themes ponderes, items configurables, scores sur mesure.</div>
+      <div class="card-title">Grilles dynamiques</div>
+      <div class="card-desc">Categorie &rarr; Question. Ponderation configurable. Chaque client a sa propre grille d'evaluation importable.</div>
     </div>
     <div class="card">
-      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <div class="card-title">Conformite automatique</div>
-      <div class="card-desc">Criteres par severite. Signalement automatique des violations. Piste d'audit complete.</div>
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="card-title">Verdict automatique</div>
+      <div class="card-desc">L'IA genere un verdict raisonne : regles compliance, score normalise, seuils configurables par client.</div>
     </div>
     <div class="card">
-      <div class="ico-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-      <div class="card-title">Scoring IA calibre</div>
-      <div class="card-desc">Modeles calibres sur vos standards. Resultats coherents et reproductibles.</div>
-    </div>
-    <div class="card">
-      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
-      <div class="card-title">Analytics temps reel</div>
-      <div class="card-desc">Dashboard en direct. Tendances agents. Distribution des scores par client et theme.</div>
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg></div>
+      <div class="card-title">Conformite par script</div>
+      <div class="card-desc">Analyse situationnelle et contextuelle. L'IA evalue si l'agent a suivi le script — pas du matching mots-cles.</div>
     </div>
     <div class="card">
       <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
-      <div class="card-title">Rapports PDF & Excel</div>
-      <div class="card-desc">Rapports d'audit detailles. Prets pour les regulateurs et les revues internes.</div>
+      <div class="card-title">Rapports multi-niveaux</div>
+      <div class="card-desc">Par evaluation, par agent, par campagne. Export PDF brande et Excel natif. Prets pour vos clients.</div>
     </div>
     <div class="card">
-      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
-      <div class="card-title">API REST ouverte</div>
-      <div class="card-desc">Integrez votre telephonie, outils BI, CRM. Import temps reel ou en lot.</div>
+      <div class="ico-box"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/><path d="M8 12l4-4 4 4"/></svg></div>
+      <div class="card-title">Analytics & Insights IA</div>
+      <div class="card-desc">Detection d'anomalies, identification de patterns, clustering des appels et tendances predictives.</div>
+    </div>
+    <div class="card">
+      <div class="ico-box"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+      <div class="card-title">Dashboards temps reel</div>
+      <div class="card-desc">KPIs en direct. Classements agents. Distribution des scores par client, theme et periode.</div>
     </div>
   </div>
   <aside class="notes">
     Ciblez 2-3 features selon le client.
-    Responsable qualite : grilles + calibration.
-    Directeur : analytics + rapports.
+    Responsable qualite : grilles + verdicts + conformite.
+    Directeur : analytics + dashboards + rapports.
   </aside>
 </section>
 
@@ -1632,32 +1748,32 @@
       <div style="width:52px;height:52px;margin:0 auto 8px;border-radius:50%;background:rgba(139,92,246,0.12);border:2px solid var(--v500);display:flex;align-items:center;justify-content:center;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--v400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
       </div>
-      <div style="font-size:0.68em;font-weight:800;color:#fff;margin-bottom:3px;">Envoyez</div>
-      <div style="font-size:0.5em;color:var(--dim);line-height:1.4;">Un enregistrement<br>+ vos criteres qualite</div>
+      <div style="font-size:0.74em;font-weight:800;color:#fff;margin-bottom:3px;">Envoyez</div>
+      <div style="font-size:0.56em;color:var(--dim);line-height:1.4;">Un enregistrement<br>+ vos criteres qualite</div>
     </div>
 
     <!-- Arrow -->
-    <div style="font-size:1.2em;color:var(--v400);opacity:0.5;margin:0 6px;">&#10132;</div>
+    <div style="font-size:1.4em;color:var(--v400);opacity:0.7;margin:0 6px;">&#10132;</div>
 
     <!-- Step 2 -->
     <div style="text-align:center;width:200px;">
       <div style="width:52px;height:52px;margin:0 auto 8px;border-radius:50%;background:rgba(139,92,246,0.12);border:2px solid var(--v500);display:flex;align-items:center;justify-content:center;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--v400)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
       </div>
-      <div style="font-size:0.68em;font-weight:800;color:#fff;margin-bottom:3px;">Sous 24h</div>
-      <div style="font-size:0.5em;color:var(--dim);line-height:1.4;">Nous analysons et preparons<br>votre audit complet</div>
+      <div style="font-size:0.74em;font-weight:800;color:#fff;margin-bottom:3px;">Sous 24h</div>
+      <div style="font-size:0.56em;color:var(--dim);line-height:1.4;">Nous analysons et preparons<br>votre audit complet</div>
     </div>
 
     <!-- Arrow -->
-    <div style="font-size:1.2em;color:var(--v400);opacity:0.5;margin:0 6px;">&#10132;</div>
+    <div style="font-size:1.4em;color:var(--v400);opacity:0.7;margin:0 6px;">&#10132;</div>
 
     <!-- Step 3 -->
     <div style="text-align:center;width:200px;">
       <div style="width:52px;height:52px;margin:0 auto 8px;border-radius:50%;background:rgba(16,185,129,0.12);border:2px solid var(--emerald);display:flex;align-items:center;justify-content:center;">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
       </div>
-      <div style="font-size:0.68em;font-weight:800;color:#fff;margin-bottom:3px;">Decouvrez</div>
-      <div style="font-size:0.5em;color:var(--dim);line-height:1.4;">Les resultats concrets<br>et le potentiel d'evaVoc</div>
+      <div style="font-size:0.74em;font-weight:800;color:#fff;margin-bottom:3px;">Decouvrez</div>
+      <div style="font-size:0.56em;color:var(--dim);line-height:1.4;">Les resultats concrets<br>et le potentiel d'evaVoc</div>
     </div>
 
   </div>
@@ -1667,7 +1783,7 @@
     <div class="cta-main" style="font-size:0.8em;">Demandez votre audit gratuit</div>
     <div class="cta-big" style="font-size:1.1em;">Sans engagement. Resultats sous 24h.</div>
     <div style="margin-top:12px;">
-      <span style="display:inline-block;background:linear-gradient(135deg,var(--v500),var(--v300));color:#fff;font-size:0.58em;font-weight:800;padding:8px 28px;letter-spacing:0.04em;cursor:pointer;transition:transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''">contact@nouraisolutions.tn</span>
+      <span style="display:inline-block;background:linear-gradient(135deg,var(--v500),var(--v300));color:#fff;font-size:0.64em;font-weight:800;padding:10px 36px;letter-spacing:0.04em;cursor:pointer;transition:transform 0.3s;animation:glow-breathe 3s ease-in-out infinite;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform=''">contact@nouraisolutions.tn</span>
     </div>
     <div style="font-size:0.5em;color:var(--dim2);margin-top:8px;">nouraisolutions.com</div>
   </div>
